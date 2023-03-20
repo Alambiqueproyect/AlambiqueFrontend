@@ -22,7 +22,6 @@ const Router = () => {
             <Route path='/contact' element= {<ContactUsView/>}/>
             <Route path='/eventos' element= {<EventView/>}/>
             <Route path='/profile' element= {<ProfileView/>}/>
-            <Route path='/newproduct' element= {<NewProductView/>}/>
         </Routes>
     </BrowserRouter>
     )

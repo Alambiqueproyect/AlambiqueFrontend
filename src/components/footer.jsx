@@ -8,6 +8,7 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import './styles/footer.css';
 export default function Footer() {
   return (

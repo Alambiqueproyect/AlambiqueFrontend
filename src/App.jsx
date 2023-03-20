@@ -1,17 +1,17 @@
 import './App.css'
-import footer from './components/Footer.jsx'
-
+import Footer from './components/Footer.jsx'
+import Navbar from './components/Navbar'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 
 function App() {
 
   return (
-
-    <div>
-      <h1>HELLO I'M A WEB</h1>
-    
-      <footer/>
-    </div>)
-
+    <>   
+    <Navbar/>
+    <h1>HELLO I'M A WEB</h1>
+    <Footer/>
+    </>
+  )
 }
 
 export default App
