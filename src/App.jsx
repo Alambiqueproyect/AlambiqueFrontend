@@ -1,9 +1,8 @@
 import './App.css'
 import Footer from './components/Footer.jsx'
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import './components/styles/footer.css';
-
 import Navbar from './components/Navbar'
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
 
@@ -13,8 +12,13 @@ function App() {
     <h1>HELLO I'M A WEB</h1>
     <Footer/>
     </>
-    
   )
 }
 
 export default App
+
+
+
+
+
+

@@ -8,10 +8,11 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-import './styles/footer.css';
-export default function Footer() {
+import './styles/footer.css'
+
+export default function App() {
   return (
-    <MDBFooter className= 'fixed-bottom' color='white' bgColor='dark'>
+    <MDBFooter className='text-center fixed-bottom'  color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
@@ -61,7 +62,8 @@ export default function Footer() {
           </form>
         </section>
 
-
+        <section className='mb-4'>
+        </section>
         <section className='links'>
           <MDBRow>
             <MDBCol lg='3' md='6' className='links-1'>
@@ -130,9 +132,6 @@ export default function Footer() {
 
               </ul>
             </MDBCol>
-
-
-
           </MDBRow>
         </section>
       </MDBContainer>
