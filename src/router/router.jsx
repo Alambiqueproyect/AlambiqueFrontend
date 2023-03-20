@@ -10,6 +10,7 @@ import {
   import ContactUsView from "../pages/ContactUsView";
   import EventView from "../pages/EventView";
   import ProfileView from "../pages/ProfileView";
+  import NewProductView from "../pages/NewProductView";
 
 const Router = () => {
 
@@ -21,6 +22,7 @@ const Router = () => {
             <Route path='/contact' element= {<ContactUsView/>}/>
             <Route path='/eventos' element= {<EventView/>}/>
             <Route path='/profile' element= {<ProfileView/>}/>
+            <Route path='/newproduct' element= {<NewProductView/>}/>
         </Routes>
     </BrowserRouter>
     )
