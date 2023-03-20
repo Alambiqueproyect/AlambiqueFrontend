@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar"
 function NewProductView() {
 
   return (
-    <div>
+    <div className="NewProductViewContainer">
       <Navbar/>
     <h1>HELLO I'M A NEW PRODUCT</h1>
     <Footer/>
