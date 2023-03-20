@@ -1,17 +1,18 @@
 import './App.css'
-import footer from './components/Footer.jsx'
+import Footer from './components/Footer.jsx'
 
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
-
-    <div>
-      <h1>HELLO I'M A WEB</h1>
+    <>   
+    <Navbar/>
+    <h1>HELLO I'M A WEB</h1>
+    <Footer/>
+    </>
     
-      <footer/>
-    </div>)
-
+  )
 }
 
 export default App
