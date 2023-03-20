@@ -11,7 +11,7 @@ function App() {
     <div>
       <h1>HELLO I'M A WEB</h1>
     
-      <footer/>
+      <Footer/>
     </div>)
 
 }
