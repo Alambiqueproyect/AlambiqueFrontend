@@ -1,13 +1,16 @@
 
 .p-4{
-    background-color:rgb(103,11,9);
+ 
     margin-top: 0%;
     line-height: 100%;
-    width: 100%;
  
 }
 
+.bg-dark {
+    background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
+}
 .links{
+    background-color: rgb(103,11,9);
     display: flex;
     flex-direction: column;
     margin-left: 25%;
@@ -20,6 +23,7 @@
 }
 
 .mb-4{
+   
     padding-right: 0%;
     text-align: center;
     margin-left: 5%;
@@ -43,5 +47,4 @@
         margin-right: 0%;
         padding-bottom: 0%;
     }
-}   
-
+}  

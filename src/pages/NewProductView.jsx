@@ -6,7 +6,7 @@ function NewProductView() {
 
   return (
     <div>
-    <h1>HELLO I'M A NEW PRODUCT</h1>ç
+    <h1>HELLO I'M A NEW PRODUCT</h1>
     <Footer/>
     </div>
   )
