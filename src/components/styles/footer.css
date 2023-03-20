@@ -7,6 +7,10 @@
  
 }
 
+.bg-dark {
+    background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
+}
+
 .links{
     display: flex;
     flex-direction: column;

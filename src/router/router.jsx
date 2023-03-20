@@ -10,7 +10,6 @@ import {
   import ContactUsView from "../pages/ContactUsView";
   import EventView from "../pages/EventView";
   import ProfileView from "../pages/ProfileView";
-  import NewProductView from "../pages/NewProductView";
 
 const Router = () => {
 
