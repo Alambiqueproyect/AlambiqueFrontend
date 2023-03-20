@@ -1,0 +1,11 @@
+.pv-container{
+    background-image: url(/src/assets/fondo-madera.jpg);
+   
+}
+
+img{
+    width:20em;
+    height:20em;
+   border-radius: 50%;
+    
+}

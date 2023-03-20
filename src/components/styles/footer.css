@@ -6,6 +6,11 @@
 
 }
 
+.bg-dark {
+    background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
+  
+   width: 100% !important;
+}
 
 .links {
     display: flex;
