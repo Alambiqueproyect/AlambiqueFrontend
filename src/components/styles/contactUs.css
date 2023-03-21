@@ -6,15 +6,16 @@
   }
   
   .FormContainer{
+  display: flex;
   height: 50%;
   width: 65%;
   background-image: url(./src/assets/fondopergamino.jpg);
   margin: 0 3% 5%;
   border-top: .3125rem solid black;
   border-radius: 15px;
-  padding: 3.125rem;
-  align-items: center;
+  padding: .3125rem;
   justify-content: center;
+  align-items: center;
   }
   
   .Form{
