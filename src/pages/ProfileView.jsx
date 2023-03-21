@@ -10,12 +10,23 @@ function ProfileView() {
       <Navbar />
       <div className="background">
         <div className="photo">
-        <img src="src\assets\Ororo.jpg" alt="Ororo" />
-      
+        <img id="profile-img" src="src\assets\Ororo.png" alt="Ororo" /></div>  
+        <div className= "wishlist-box">
+          <div className="wishlist">Wishlist</div>
+          <div className="wishlist-ico"><img src="src\assets\Star.png" alt="star" /></div>
 
-       
-        </div>  
-        <h1>hello</h1>
+        <div className="myOrders-box">
+          <div className="myOrders">My orders</div>
+          <div className="myOrders-ico"> <img src="src\assets\Package.png" alt="package" /></div>
+        </div>
+          
+        <div className="settings-box">
+          <div className="settings">My orders</div>
+          <div className="settings-ico"> <img src="src\assets\GearSix.png" alt="package" /></div>
+        </div>
+
+        </div>
+
       </div> 
       <Footer />
     </div>
