@@ -1,21 +1,10 @@
 import React from "react"
-<<<<<<< HEAD
-import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
-
-=======
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import "../components/styles/profileView.css";
->>>>>>> feature/ProfileView
 
 function ProfileView() {
   return (
-<<<<<<< HEAD
-    <div>
-      <Navbar />
-      <h1>THIS IS A PROFILE</h1>
-=======
 
     <div className="pv-container">
       <Navbar />
@@ -42,7 +31,6 @@ function ProfileView() {
         </div>
 
       </div> 
->>>>>>> feature/ProfileView
       <Footer />
     </div>
   )
