@@ -8,10 +8,8 @@
 #f-container {
     font-family:'MedievalSharp'!important;
     background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
-   width: 100% !important;
-   height: 28%;
-   
-   
+    width: 100% !important;
+    height: 28%;
 }
 
 .p-4 {
