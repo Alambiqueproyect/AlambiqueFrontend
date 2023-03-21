@@ -12,7 +12,7 @@ import './styles/footer.css'
 
 export default function App() {
   return (
-    <MDBFooter className='text-center fixed-bottom' id='f-container' color='white' bgColor='dark'>
+    <MDBFooter className='text-center' id='f-container' color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>

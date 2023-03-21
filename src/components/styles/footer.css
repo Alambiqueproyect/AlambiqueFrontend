@@ -11,6 +11,7 @@
    width: 100% !important;
    height: 28%;
    
+   
 }
 
 .p-4 {
@@ -28,12 +29,13 @@
     flex-direction: column;
     margin-left: 25%;
     line-height: 160%;
-    margin-top: -3%;
+    margin-top: -3.5%;
 }
 
 .pt-2 {
     margin-right: 10%;
     line-height: 100%;
+    
 }
 
 .mb-4 {

@@ -21,8 +21,11 @@ function ProfileView() {
         </div>
           
         <div className="settings-box">
-          <div className="settings">My orders</div>
+          <div className="settings">Settings</div>
           <div className="settings-ico"> <img src="src\assets\GearSix.png" alt="package" /></div>
+        </div>
+
+        <div className="product-box">
         </div>
 
         </div>
