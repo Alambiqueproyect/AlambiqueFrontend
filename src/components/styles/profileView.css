@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(/src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.pv-container {
+    font-family: 'MedievalSharp';
+    background-image: url(/src/assets/fondo-madera.jpg);
+    height: 60em;
+}
+
+#profile-img {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    margin-right: 63em;
+    margin-top: 1em;
+
+}
+
+.wishlist-box {
+    margin-top: -3em;
+    width: 40em;
+    height: 5em;
+    background-color: rgba(255, 255, 255, 0.509);
+
+}
+
+.wishlist {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 3em;
+    margin-left: 3em;
+    font-size: x-large;
+
+}
+
+.wishlist-ico {
+    margin-left: 25em;
+    margin-top: -2em;
+}
+
+.myOrders-box {
+    width: 40em;
+    height: 5em;
+    margin-top: -3em;
+    background-color: rgba(255, 255, 255, 0.509);
+
+}
+
+.myOrders {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 3em;
+    margin-left: 3em;
+    font-size: x-large;
+
+}
+
+.myOrders-ico {
+    margin-left: 25em;
+    margin-top: -2.2em;
+}
+
+.settings-box {
+    width: 40em;
+    height: 5em;
+    margin-top: -3.5em;
+    background-color: rgba(255, 255, 255, 0.509);
+}
+
+.settings {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 3em;
+    margin-left: 3em;
+    font-size: x-large;
+}
+
+.settings-ico {
+    margin-left: 25em;
+    margin-top: -2em;
+}
+
+.product-box{
+    background-color: rgba(255, 255, 255, 0.509);
+    height: 35em;
+    width: 35em;
+    margin-left: 58em;
+    margin-top: -30em;
+
+}
