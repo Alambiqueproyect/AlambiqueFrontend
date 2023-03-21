@@ -7,6 +7,8 @@ import './styles/NewProductView.css'
 
 function NewProductView() {
 
+  
+
   return (
     <div className="NewProductViewContainer">
     <Navbar/>

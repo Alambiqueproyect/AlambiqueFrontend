@@ -1,0 +1,11 @@
+
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .9375rem;
+    justify-content: center;
+    justify-content: space-around;
+    
+}

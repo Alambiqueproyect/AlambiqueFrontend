@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import Modalproduct from './Modalproduct';
 import ProductHandler from '../handlers/handlers';
+import './styles/Productcardstyle.css'
 
 const Productcard = () => {
 
@@ -23,7 +24,7 @@ const Productcard = () => {
 
   return (
     <>
-        <div className="cold-md-4">
+        <div className="CardContainer">
           
         <Modalproduct show={show} handleClose={handleClose} />
         {
