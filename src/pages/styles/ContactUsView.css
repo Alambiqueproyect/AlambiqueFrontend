@@ -2,6 +2,7 @@
     display: flex;
     background-image: url(./src/assets/fondomadera.jpg);
     height: 50em;
+    border: .3125rem;
     justify-content: center;
     align-items: center;
 }
