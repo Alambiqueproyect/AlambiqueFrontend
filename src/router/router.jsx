@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
   import NewProductView from "../pages/NewProductView";
   import App from "../App";
+  import EventsView from "../pages/EventsView";
 
 const Router = () => {
 
@@ -15,6 +16,7 @@ const Router = () => {
         <Routes>
             <Route path='/' element={<App />} />
             <Route path='/newproduct' element={<NewProductView/>} />
+            <Route path='/eventos' element={<EventsView/>} />
         </Routes>
     </BrowserRouter>
     )
