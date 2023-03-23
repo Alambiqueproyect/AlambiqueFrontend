@@ -3,9 +3,6 @@ import Form from 'react-bootstrap/Form';
 import '../components/styles/NewProductForm.css'
 
 
-
-
-
 function NewProductForm() {
 
 
