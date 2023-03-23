@@ -23,11 +23,11 @@ function ContactUs() {
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <div className="Contactcontainer">
-            <Form.Label>Correo Electronico</Form.Label>
+            <Form.Label>Correo Electrónico</Form.Label>
             <Form.Control
               className="FormInputContainer"
               type="text"
-              placeholder="Introduzca su Correo Electronico"
+              placeholder="Introduzca su Correo Electrónico"
             />
           </div>
         </Form.Group>
