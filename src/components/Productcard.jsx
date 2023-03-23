@@ -122,8 +122,10 @@ export default function ProductList() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+           
+
             />
-            <Button variant="outline-success">Search</Button>
+            <Button bg="dark" variant="dark">Search</Button>
           </Form>
               <div style= {{display:"flex", flexDirection:"row", justifyContent: "center", height: 50, }}>
 
@@ -132,7 +134,7 @@ export default function ProductList() {
                 </div>
                         
                 <div style={{paddingTop:10, width: "25%", height:"100%", display:"flex", flexDirection:"row", borderRadius:5, borderBottom: "solid 3px orange", justifyContent:"space-evenly" }}>
-                    <label style={{ fontFamily: "Goldman", margin:0}}>Nuevo</label>
+                    <label style={{ fontFamily: "Goldman", margin:0}}>Amor</label>
                     <input  style={{margin: 0, paddingBottom: 10, width: 25}} type="checkbox" onChange={handleCheckBox} value="Amor" />
                 </div>
                         
@@ -258,22 +260,23 @@ export default function ProductList() {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
+              sm
             />
-            <Button variant="outline-success">Search</Button>
+            <Button bg="dark" variant="dark">Search</Button>
           </Form>
 
-        <div style= {{display:"flex", flexDirection:"row", justifyContent: "center", height: 50, }}>
+        <div style= {{display:"flex", flexDirection:"row", justifyContent: "center", height: 50}}>
 
-          <div style= {{borderBottom:"1px solid orange", paddingTop: 10, width: "25%", height:"100%", justifyContent:"center", alignContent: "center", justifyContent:"space-evenly"}}>
+          <div style= {{borderBottom:"1px solid black",backgroundColor:"red",paddingTop: 10, width: "25%", height:"100%", justifyContent:"center", alignContent: "center", justifyContent:"space-evenly"}}>
               <p>MOSTRAR</p>
           </div>
                   
-          <div style={{paddingTop:10, width: "25%", height:"100%", display:"flex", flexDirection:"row", borderRadius:5, borderBottom: "solid 3px orange", justifyContent:"space-evenly" }}>
+          <div style={{paddingTop:10, width: "25%", height:"100%",backgroundColor:"red", display:"flex", flexDirection:"row", borderRadius:5, borderBottom: "solid 3px black", justifyContent:"space-evenly" }}>
               <label style={{ fontFamily: "Goldman", margin:0}}>Amor</label>
               <input  style={{margin: 0, paddingBottom: 10, width: 25}} type="checkbox" onChange={handleCheckBox} value="Amor" />
           </div>
                   
-          <div style={{paddingTop:10, width: "25%", height:"100%", display:"flex", flexDirection:"row", borderRadius:5, borderBottom: "solid 3px orange", justifyContent:"space-evenly"}}>
+          <div style={{paddingTop:10, width: "25%", height:"100%",backgroundColor:"red", display:"flex", flexDirection:"row", borderRadius:5, borderBottom: "solid 3px black", justifyContent:"space-evenly"}}>
               <label style={{fontFamily: "Goldman", margin:0}}>Tech Skills</label>
               <input style={{margin: 0, paddingBottom:10, width: 25}} type="checkbox" onChange={handleCheckBox} value="TechSkills"/>
           </div> 
