@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import Modalproduct from './Modalproduct';
-import ProductHandler from '../handlers/handlers';
+import { productHandler } from '../handlers/productHandler';
 import './styles/Productcardstyle.css'
 
 const Productcard = () => {
@@ -16,7 +16,7 @@ const Productcard = () => {
     }, []);
 
     const getData = async () => {
-      const data = await ProductHandler.loadProducts();
+      const data = await productHandler.loadProducts();
       setProducts(data);
     };
 
@@ -29,9 +29,10 @@ const Productcard = () => {
         <Modalproduct show={show} handleClose={handleClose} />
         {
           productlist.map(p =>(
+            
             <Card style={{ width: '18rem' }} key={p.id}>
             <Card.Header>{p.productName}</Card.Header>
-            <Card.Img variant="top" src={p.image} />
+            <Card.Img variant="top" src={p.image} className="imagecard"/>
             <Card.Body>
                 <Card.Text>
                {p.description}
@@ -39,6 +40,7 @@ const Productcard = () => {
                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
             </Card.Body>
             </Card>
+            
           ))
           
         }
