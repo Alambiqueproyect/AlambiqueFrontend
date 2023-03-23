@@ -1,0 +1,19 @@
+
+
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .9375rem;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0 auto !important;
+    
+}
+
+.imagecard{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}

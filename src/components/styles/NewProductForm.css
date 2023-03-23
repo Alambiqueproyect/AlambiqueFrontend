@@ -1,0 +1,69 @@
+@font-face{
+    font-family: 'MedievalSharp';
+    src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.FormContainer{
+    height: 50%;
+    width: 65%;
+    background-image: url(./src/assets/fondopergamino.jpg);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: .3125rem;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+Form{
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+Form.Group{
+    display: flex;
+    flex-direction: row;
+}
+
+.AddNewProductcontainer{
+display: flex;
+flex-direction: row;
+}
+
+#h3{
+    margin-top: 6%;
+    margin-bottom: 4%;
+    font-family: 'MedievalSharp' !important;
+    font-weight: bold;
+    color: black;
+}
+
+label{
+    width: 30% !important;
+    font-family: 'MedievalSharp' !important;
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.FormInputContainer{
+    background-color: transparent !important;
+    border: 0 !important;
+    border-bottom: solid .0563rem black !important;
+    margin-left: 10% !important;
+    outline: transparent !important;
+    
+    
+}
+
+Button{
+    margin-top: 4% !important;
+    background: transparent !important;
+    color: black !important;
+    outline: 1px black solid !important;
+    font-family: 'MedievalSharp' !important;
+    font-size: 20px !important;
+
+}
