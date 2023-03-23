@@ -4,69 +4,75 @@
   font-style: normal;
   font-weight: normal;
   }
-  
-  .FormContainer{
+
+ .ContactUs {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./src/assets/fondomadera.jpg);
+  height: 80%;
+}
+.FormContainer {
+  background-image: url(./src/assets/fondopergamino.jpg);
   height: 50%;
   width: 65%;
-  background-image: url(./src/assets/fondopergamino.jpg);
-  margin: 0 3% 5%;
+  margin: 3% 3% 5%;
   border-top: .3125rem solid black;
   border-radius: 15px;
   padding: .3125rem;
   justify-content: center;
   align-items: center;
   }
-  
+
   .Form{
   margin: 0 auto 5%;
   width: 80%;
   }
-  
+
   .Form.Group{
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
   }
-  
+
   .Contactcontainer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   }
-  
+
   #h3{
   margin-top: 6%;
   margin-bottom: 4%;
   font-family: 'MedievalSharp', cursive;
   font-weight: bold;
-  color: black;
+  color: #000;
   font-size: 2rem;
   text-align: center;
   }
-  
+
   label{
-  width: 30%;
-  font-family: 'MedievalSharp', cursive;
-  color: black;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-right: 1rem;
+  width: 30% !important;
+  font-family: 'MedievalSharp', cursive !important;
+  color: #000 !important;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+  margin-right: 1rem !important;
   }
-  
+
   .FormInputContainer{
-  background-color: transparent;
-  border: none;
-  border-bottom: solid .0563rem black;
-  margin-left: 1rem;
-  outline: none;
-  font-family: 'MedievalSharp', cursive;
-  font-size: 1rem;
-  padding: 0.5rem;
-  width: 70%;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: solid .0563rem #000 !important;
+  margin-left: 1rem !important;
+  outline: none !important;
+  font-family: 'MedievalSharp', cursive !important;
+  font-size: 1rem !important;
+  padding: 0.5rem !important;
+  width: 70% !important;
   }
-  
+
   Button{
   margin-top: 2rem;
   background-color: transparent !important;
@@ -80,16 +86,16 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   }
-  
+
   Button:hover{
   background-color: #555;
   }
-  
+
   @media screen and (max-width: 768px) {
   .FormContainer {
   width: 90%;
   }
-  
+
   label, .FormInputContainer {
   font-size: 1rem;
   }
@@ -100,5 +106,6 @@
   }
 
 }
- 
+  
+
   
