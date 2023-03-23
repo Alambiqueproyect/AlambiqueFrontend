@@ -1,7 +1,7 @@
 import React from "react";
-import './styles/ContactUsView.css';
 import ContactUs from "../components/ContactUs"
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 function ContactUsView () {
@@ -10,9 +10,8 @@ function ContactUsView () {
         <div>
 
             <Navbar/>
-            <div className="ContactUsViewContainer">
             <ContactUs/>
-            </div>
+            <Footer/>
 
         </div>
        

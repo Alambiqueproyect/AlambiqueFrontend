@@ -1,9 +1,18 @@
+@font-face{
+  font-family: 'MedievalSharp';
+  src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  }
+
+
 .navbar {
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-content: space-between;
   align-items: center;
   background-color: #670809;
+  font-family: 'MedievalSharp' ;
   color: #FFFCE5;
   height: 129px;
   padding: 0 20px;

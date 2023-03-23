@@ -5,8 +5,10 @@ import {
     Route
   } from "react-router-dom";
   import NewProductView from "../pages/NewProductView";
-  import ContactUsView from "../pages/ContactUsView";
   import App from "../App";
+  import ContactUsView from "../pages/ContactUsView";
+  import EventView from "../pages/EventView";
+  import ProfileView from "../pages/ProfileView";
 
 const Router = () => {
 
@@ -15,8 +17,9 @@ const Router = () => {
         <Routes>
             <Route path='/' element={<App />} />
             <Route path='/newproduct' element={<NewProductView/>} />
-             <Route path='/contact' element={<ContactUsView/>} />
-
+            <Route path='/contact' element= {<ContactUsView/>}/>
+            <Route path='/events' element= {<EventView/>}/>
+            <Route path='/profile' element= {<ProfileView/>}/>
         </Routes>
     </BrowserRouter>
     )
