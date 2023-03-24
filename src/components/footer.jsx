@@ -8,7 +8,7 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-import './styles/footer.css'
+import './styles/footer.css';
 
 export default function App() {
   return (
@@ -54,7 +54,7 @@ export default function App() {
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
+                <MDBBtn outline color='light' type='submit' className='mb-5'>
                   Subscribe
                 </MDBBtn>
               </MDBCol>
@@ -137,4 +137,5 @@ export default function App() {
       </MDBContainer>
     </MDBFooter>
   );
+
 }
