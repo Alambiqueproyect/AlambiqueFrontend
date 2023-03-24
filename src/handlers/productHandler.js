@@ -6,12 +6,12 @@ export const productHandler = {
             return;
         }
         let newProductStructure = {
-            "id": "",
+            "id": 0,
             "productName": newProduct.productName,
             "price": newProduct.price,
             "description": newProduct.description,
             "img": newProduct.img,
-            "stocks": newProduct.stocks,
+            "stock": newProduct.stock,
             "effectsDuration": newProduct.effectsDuration,
             "adverseEffects": newProduct.adverseEffects,
             "productCategory": newProduct.productCategory,
@@ -41,7 +41,7 @@ export const productHandler = {
             "price": updatedProduct.price,
             "description": updatedProduct.description,
             "img": updatedProduct.img,
-            "stocks": updatedProduct.stocks,
+            "stock": updatedProduct.stock,
             "effectsduration": updatedProduct.effectsduration,
             "adverseeffects": updatedProduct.adverseeffects,
             "category": updatedProduct.category,
