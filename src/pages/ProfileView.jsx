@@ -34,6 +34,9 @@ function ProfileView() {
       <Footer />
     </div>
   )
+
+
 }
+
 
 export default ProfileView
