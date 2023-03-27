@@ -8,7 +8,7 @@
 .pv-container {
     font-family: 'MedievalSharp';
     background-image: url(/src/assets/fondo-madera.jpg);
-    height: 60em;
+    height: 51em;
 }
 
 #profile-img {
@@ -23,7 +23,7 @@
 .wishlist-box {
     margin-top: -3em;
     width: 40em;
-    height: 5em;
+    height: 4em;
     background-color: rgba(255, 255, 255, 0.509);
 
 }
@@ -42,9 +42,14 @@
     margin-top: -2em;
 }
 
+#wishlistico {
+    height: 3.5em;
+    width: 3.5em;
+}
+
 .myOrders-box {
     width: 40em;
-    height: 5em;
+    height: 4em;
     margin-top: -3em;
     background-color: rgba(255, 255, 255, 0.509);
 
@@ -64,9 +69,14 @@
     margin-top: -2.2em;
 }
 
+#orderico {
+    height: 3.5em;
+    width: 3.5em;
+}
+
 .settings-box {
     width: 40em;
-    height: 5em;
+    height: 4em;
     margin-top: -3.5em;
     background-color: rgba(255, 255, 255, 0.509);
 }
@@ -84,9 +94,14 @@
     margin-top: -2em;
 }
 
+#settingsico{
+    height: 3.5em;
+    width: 3.5em;
+}
+
 .product-box{
     background-color: rgba(255, 255, 255, 0.509);
-    height: 35em;
+    height: 30em;
     width: 35em;
     margin-left: 58em;
     margin-top: -30em;
