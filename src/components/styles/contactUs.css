@@ -84,7 +84,7 @@
   font-family: 'MedievalSharp' !important;
   font-size: .9375rem !important;
   padding: 1rem 2rem !important;
-  margin-left: 18rem !important;
+  /* margin-left: 18rem !important; */
   cursor: pointer !important;
   transition: background-color 0.3s ease !important;
   }
