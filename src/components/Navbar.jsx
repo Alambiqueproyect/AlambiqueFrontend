@@ -18,12 +18,12 @@ function Navbar() {
         alt="Alambique"
         className="icons" />
       </div>
-      {/* <div className={`nav_items ${isExpanded ? "active" : ""}`}>
+      {<div className={`nav_items ${isExpanded ? "active" : ""}`}>
         <Link to="/">Home</Link>
         <Link to="/events" >Events</Link>
         <Link to="/profile" >Profile</Link>
         <Link to="/contact" >Contact</Link>
-      </div> */}
+      </div>}
       <div className="nav_toggle" onClick={handleToggle}>
         <span></span>
         <span></span>
