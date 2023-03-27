@@ -66,6 +66,7 @@
   border: none !important;
   border-bottom: solid .0563rem #000 !important;
   margin-left: .9375rem !important;
+  margin-top: -1.5rem !important;
   outline: none !important;
   font-family: 'MedievalSharp' !important;
   font-size: 1rem !important;
@@ -83,6 +84,7 @@
   font-family: 'MedievalSharp' !important;
   font-size: .9375rem !important;
   padding: 1rem 2rem !important;
+  margin-left: 18rem !important;
   cursor: pointer !important;
   transition: background-color 0.3s ease !important;
   }
