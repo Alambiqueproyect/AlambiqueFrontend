@@ -8,11 +8,11 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-// import './styles/footer.css'
+import './styles/footer.css'
 
 export default function App() {
   return (
-    <MDBFooter className='text-center'  color='white' bgColor='dark'>
+    <MDBFooter className='text-center' id='FooterContainer'  color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>

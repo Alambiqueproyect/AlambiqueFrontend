@@ -1,10 +1,14 @@
 
 .p-4{
-    background-color:rgb(103,11,9);
+    background-color:rgb(103,11,9) !important;
     margin-top: 0%;
     line-height: 100%;
     width: 100%;
  
+}
+
+#FooterContainer{
+    background-color:rgb(103,11,9) !important;
 }
 
 .bg-dark {
