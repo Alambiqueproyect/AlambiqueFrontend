@@ -9,7 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./src/assets/fondomadera.jpg);
+  /* background-image: url(./src/assets/fondomadera.jpg);
+  background: cover; */
   height: 100%;
 }
 .FormContainer {

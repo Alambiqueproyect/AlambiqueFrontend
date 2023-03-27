@@ -7,7 +7,7 @@
 
 .pv-container {
     font-family: 'MedievalSharp';
-    background-image: url(/src/assets/fondo-madera.jpg);
+    /* background-image: url(/src/assets/fondo-madera.jpg); */
     height: 80%;
 }
 
