@@ -40,7 +40,7 @@ export default function App() {
           </MDBBtn>
         </section>
 
-        <section className=''>
+        <section className='newsletter'>
           <form action=''>
             <MDBRow className='d-flex justify-content-center'>
               <MDBCol size="auto">
@@ -54,7 +54,7 @@ export default function App() {
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-5'>
+                <MDBBtn outline color='light' id= 'suscribe' type='submit' className='mb-4'>
                   Subscribe
                 </MDBBtn>
               </MDBCol>
