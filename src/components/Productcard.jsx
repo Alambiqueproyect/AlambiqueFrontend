@@ -20,16 +20,21 @@ const Productcard = () => {
       setProducts(data);
     };
 
-    let productlist = products
+    let productList = products
+
+    // const handleDelete = async (id) => {
+    //   setProducts(products.filter((p) => p.id !== id));
+    //   await productHandler.deleteProduct(id);
+    // }
 
   return (
     <>
         <div className="CardContainer">
-          
+
         <Modalproduct show={show} handleClose={handleClose} />
         {
-          productlist.map(p =>(
-            
+          productList.map(p =>(
+
             <Card style={{ width: '18rem' }} key={p.id}>
             <Card.Header>{p.productName}</Card.Header>
             <Card.Img variant="top" src={p.image} className="imagecard"/>
@@ -38,11 +43,12 @@ const Productcard = () => {
                {p.description}
                 </Card.Text>
                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+
             </Card.Body>
             </Card>
-            
+
           ))
-          
+
         }
 
         </div>
@@ -50,4 +56,4 @@ const Productcard = () => {
   );
 }
 
-export default Productcard;
+export default Productcard

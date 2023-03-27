@@ -9,7 +9,7 @@ const CreateProduct = () => {
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState(null);
   const [description, setDescription] = useState("");
-  const [img, setImg] = useState("");
+  const [image, setImage] = useState("");
   const [stock, setStock] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [effectsDuration, setEffectsDuration] = useState("");
@@ -45,21 +45,19 @@ const CreateProduct = () => {
     let adverseEffectsInput = event.target.value;
     setAdverseEffects(adverseEffectsInput);
   };
-  const handleImgChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      setImg(reader.result)
-    };
-  };
+  const handleImageChange = (event) => {
+      let picture = event.target.value;
+      setImage(picture);
+    }
+  
+  
   const handleStockChange = (event) => {
     let stockInput = event.target.value;
     setStock(stockInput);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { productName, description, price, img, stock, effectsDuration, ingredients, productCategory, adverseEffects };
+    let newProduct = { productName, description, price, image, stock, effectsDuration, ingredients, productCategory, adverseEffects };
     productHandler.addProduct(newProduct);
     event.target.reset()
   };
@@ -74,6 +72,14 @@ const CreateProduct = () => {
       <form onSubmit={handleSubmit} itemID="form1">
         <h3 id="h3">Crea un nuevo producto</h3>
         <div className="mb-3" >
+
+        <div className="mb-3" >
+          <div className='AddNewProductcontainer'>
+            <label htmlFor="id" className="form-label"></label>
+            <input name="id" type="hidden"/>
+          </div>
+          </div>
+
           <div className='AddNewProductcontainer'>
             <label htmlFor="title" className="form-label">Nombre</label>
             <input name="title" type="text" className='FormInputContainer' placeholder="Product name" onChange={handleProductNameChange} required />
@@ -125,8 +131,8 @@ const CreateProduct = () => {
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
-            <label htmlFor="img" className="form-label">Imagen</label>
-            <input name="img" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgChange} required />
+            <label htmlFor="image" className="form-label">Imagen</label>
+            <input name="image" type="text" className="form-control" placeholder="Upload a picture" onChange={handleImageChange} required />
           </div>
         </div>
         <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>

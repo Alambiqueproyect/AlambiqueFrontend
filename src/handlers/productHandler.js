@@ -6,11 +6,10 @@ export const productHandler = {
             return;
         }
         let newProductStructure = {
-            "id": "",
             "productName": newProduct.productName,
             "price": newProduct.price,
             "description": newProduct.description,
-            "img": newProduct.img,
+            "image": newProduct.image,
             "stocks": newProduct.stocks,
             "effectsDuration": newProduct.effectsDuration,
             "adverseEffects": newProduct.adverseEffects,
@@ -40,7 +39,7 @@ export const productHandler = {
             "productname": updatedProduct.productname,
             "price": updatedProduct.price,
             "description": updatedProduct.description,
-            "img": updatedProduct.img,
+            "image": updatedProduct.image,
             "stocks": updatedProduct.stocks,
             "effectsduration": updatedProduct.effectsduration,
             "adverseeffects": updatedProduct.adverseeffects,
