@@ -1,51 +1,63 @@
+@font-face{
+    font-family: 'MedievalSharp';
+    src: url(.src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    }
 
-.p-4{
-    background-color:rgb(103,11,9);
+#f-container {
+    font-family:'MedievalSharp'!important;
+    background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
+    width: 100% !important;
+    height: 28%;
+}
+
+.p-4 {
+    font-family:'MedievalSharp'!important;
+    background-color: rgb(103, 11, 9);
     margin-top: 0%;
     line-height: 100%;
     width: 100%;
- 
+
 }
 
-.bg-dark {
-    background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
-}
-
-.links{
+.links {
+    font-family:'MedievalSharp' !important;
     display: flex;
     flex-direction: column;
     margin-left: 25%;
     line-height: 160%;
+    margin-top: -3.5%;
 }
 
-.pt-2{
+.pt-2 {
     margin-right: 10%;
     line-height: 100%;
+    
 }
 
-.mb-4{
+.mb-4 {
     padding-right: 0%;
     text-align: center;
     margin-left: 5%;
 }
 
 
-@media (min-width: 360px) and (max-width: 760px){
+@media (min-width: 360px) and (max-width: 760px) {
 
-    .p-4{
-        background-color:rgb(33,37,41);
-     
+    .p-4 {
+        background-color: rgb(33, 37, 41);
+
     }
-    
-    .links{
+
+    .links {
         line-height: 180%;
         margin-top: -5%;
         margin-left: 3%;
     }
 
-    .pt-2{
+    .pt-2 {
         margin-right: 0%;
         padding-bottom: 0%;
     }
-}   
-
+}
