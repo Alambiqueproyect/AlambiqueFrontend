@@ -78,7 +78,7 @@
   margin-top: 1.5625rem !important;
   background-color: transparent !important;
   color: #000 !important;
-  border: solid !important;
+  /* border: solid !important; */
   border-radius: .625rem !important;
   outline: none !important;
   font-family: 'MedievalSharp' !important;

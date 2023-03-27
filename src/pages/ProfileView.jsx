@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import "../components/styles/profileView.css";
+import "./styles/profileView.css";
 
 function ProfileView() {
   return (
