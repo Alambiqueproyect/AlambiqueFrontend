@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'MedievalSharp';
+    src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+#cardHeatherID{
+    font-family: 'MedievalSharp';
+    font-weight: bold;
+}

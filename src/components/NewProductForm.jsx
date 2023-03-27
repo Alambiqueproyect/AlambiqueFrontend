@@ -7,7 +7,7 @@ import '../components/styles/NewProductForm.css'
 
 const CreateProduct = () => {
   const [productName, setProductName] = useState("");
-  const [price, setPrice] = useState(null);
+  const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
   const [stock, setStock] = useState("");
