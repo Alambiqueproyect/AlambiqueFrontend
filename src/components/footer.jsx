@@ -54,7 +54,7 @@ export default function App() {
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
+                <MDBBtn outline color='light' type='submit' className='mb-5'>
                   Subscribe
                 </MDBBtn>
               </MDBCol>
