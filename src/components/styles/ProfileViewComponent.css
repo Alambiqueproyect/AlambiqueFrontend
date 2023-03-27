@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(/src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#profileViewContiner1{
+   display: flex;
+   flex-direction: row;
+    height: 100% !important;
+    width: 100%;
+}
+
+#profileViewContainer2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#profile-img{
+    height: 15.625rem;
+    width: 15.625rem;
+    margin-left: 30%;
+}
+
+.SettingContainer{
+    width: 95%;
+    border-radius: .3125rem;
+    margin: .9375rem;
+    background-color: antiquewhite;
+}
+
+h3{
+    font-family: 'MedievalSharp';
+    font-weight: bold;
+font-size: 1.875rem;}
+
+.settingObjet{
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    justify-content: flex-end;
+    padding-top: .625rem;
+}
+
+.profileViewIcon{
+    height: 2.5rem!important;
+    width: 2.5rem !important;
+    margin-left: .625rem;
+}
+
+#soyUnProductito{
+    width: 100%;
+    margin: .625rem;
+    background-color: antiquewhite;
+    border-radius: .625rem;
+    font-family: 'MedievalSharp';
+    font-size: 2.5rem;
+
+}
+
+@media screen and (max-width: 768px){
+
+    #profileViewContiner1{
+        display: flex;
+        flex-direction: column;
+         height: 100% !important;
+         width: 95%;
+     }
+     
+     #profileViewContainer2{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin-left: 2%;
+        }
+
+        .settingObjet{
+            display: flex;
+            flex-direction: row;
+            margin: 1.25rem;
+            justify-content: flex-end;
+            padding-top: .625rem;
+            width: 90% !important;
+        }
+
+        #profile-img{
+            height: 15.625rem;
+            width: 15.625rem;
+            margin-left: 17%;
+        }
+
+        #soyUnProductito{
+            width: 100%;
+            height: 31.25rem;
+            margin: .625rem;
+            background-color: antiquewhite;
+            border-radius: .625rem;
+            font-family: 'MedievalSharp';
+            font-size: 2.5rem;
+        
+        }
+
+}

@@ -54,7 +54,7 @@ function ContactUs() {
           </div>
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" id="sendButton">
           Enviar
         </Button>
       </Form>

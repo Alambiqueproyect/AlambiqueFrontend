@@ -40,7 +40,7 @@ export default function App() {
           </MDBBtn>
         </section>
 
-        <section className=''>
+        <section className='footerActionsSection'>
           <form action=''>
             <MDBRow className='d-flex justify-content-center'>
               <MDBCol size="auto">
@@ -54,20 +54,76 @@ export default function App() {
               </MDBCol>
 
               <MDBCol size="auto">
-                <MDBBtn outline color='light' type='submit' className='mb-4'>
+                <MDBBtn outline color='light' type='submit' className='mb-4' id='suscribe'>
                   Subscribe
                 </MDBBtn>
               </MDBCol>
+              <section className='links'>
+          <MDBRow>
+            <MDBCol lg='3' md='6' className='links-1'>
+              <h5 className='text-uppercase'></h5>
+              <ul className='list-unstyled mb-0'>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Customer Support
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Work with us
+                  </a>
+                </li>
+              </ul>
+            </MDBCol>
+            <MDBCol lg='3' md='6' className='links-2'>
+              <h5 className='text-uppercase'></h5>
+              <ul className='list-unstyled mb-0'>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Payment Method
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Shipping
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Return Policy
+                  </a>
+                </li>
+              </ul>
+            </MDBCol>
+            <MDBCol lg='3' md='6' className='links-3'>
+              <h5 className='text-uppercase'></h5>
+              <ul className='list-unstyled mb-0'>
+                <li>
+                  <a href='#!' className='text-white'>
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href='#!' className='text-white'>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </MDBCol>
+          </MDBRow>
+        </section>
             </MDBRow>
           </form>
-        </section>
-
-        <section className='mb-4'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
         </section>
       </MDBContainer>
 

@@ -17,3 +17,14 @@
     object-fit: cover;
 
 }
+
+.card{
+    background: url(./src/assets/fondopergamino.jpg);
+}
+
+@media screen and (max-width: 768px){
+
+    .card{
+        margin: 2%;
+    }
+}

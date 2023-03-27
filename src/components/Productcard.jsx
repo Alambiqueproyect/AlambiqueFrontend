@@ -29,7 +29,7 @@ const Productcard = () => {
         <Modalproduct show={show} handleClose={handleClose} />
         {
           productlist.map(p =>(
-            <Card style={{ width: '18rem' }} key={p.id}>
+            <Card style={{ width: '18rem' }} key={p.id} id="card">
             <Card.Header>{p.productName}</Card.Header>
             <Card.Img variant="top" src={p.image} className="imagecard"/>
             <Card.Body>

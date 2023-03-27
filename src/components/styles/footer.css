@@ -33,6 +33,20 @@
     margin-left: 5%;
 }
 
+#suscribe {
+    margin-top: -8% !important;
+    font-size: medium !important;
+    color: white !important;
+    margin-left: 10% !important;
+}
+
+.links {
+    font-family:'MedievalSharp' !important;
+    margin-left: 55% !important;
+    line-height: 160% !important;
+    margin-top: -2% !important;
+    
+}
 
 @media (min-width: 360px) and (max-width: 760px){
 
@@ -42,9 +56,8 @@
     }
     
     .links{
-        line-height: 180%;
-        margin-top: -5%;
-        margin-left: 3%;
+        margin: 0 auto !important;
+        margin-left: 10% !important;
     }
 
     .pt-2{
