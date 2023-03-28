@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../components/styles/EditProductForm.css';
 import { useLoaderData } from "react-router-dom";
 import { productHandler } from "../handlers/productHandler";
 
