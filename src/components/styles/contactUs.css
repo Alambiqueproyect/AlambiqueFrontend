@@ -9,7 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./src/assets/fondomadera.jpg);
+  /* background-image: url(./src/assets/fondomadera.jpg);
+  background: cover; */
   height: 100%;
 }
 .FormContainer {
@@ -74,23 +75,25 @@
   width: 70% !important;
   }
 
-  Button{
+  #sendButton {
   margin-top: 1.5625rem !important;
   background-color: transparent !important;
   color: #000 !important;
-  border: solid !important;
+  border: solid .0313rem !important; 
   border-radius: .625rem !important;
   outline: none !important;
   font-family: 'MedievalSharp' !important;
   font-size: .9375rem !important;
   padding: 1rem 2rem !important;
-  margin-left: 18rem !important;
+  margin-left: 20% !important;
+  margin-bottom: 5%; 
   cursor: pointer !important;
   transition: background-color 0.3s ease !important;
   }
 
-  Button:hover{
-  background-color: #000;
+  #sendButton:hover{
+  background-color: #000 !important;
+  color: white !important;
   }
 
   @media screen and (max-width: 768px) {
@@ -102,7 +105,7 @@
   font-size: 1rem;
   }
   
-  Button {
+  #sendButton {
   font-size: 1.25rem;
   padding: 0.75rem 1.5rem;
   }

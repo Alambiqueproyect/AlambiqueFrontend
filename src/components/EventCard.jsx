@@ -23,11 +23,11 @@ let eventlist = events
   return (
 
 
-    <CardGroup >
+    <CardGroup className='CardGroup'>
         {
           eventlist.map(e =>(
         
-            <Card style={{ width: '18rem' }} key={e.id}>
+            <Card className='cardStyle' style={{ width: '10rem' }} key={e.id}>
             <CardHeader id="cardHeatherID">{e.name}</CardHeader>
             <Card.Img variant="top" src={"holder.js/100px180"} />
             <Card.Body>

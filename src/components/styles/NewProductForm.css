@@ -11,12 +11,17 @@
     height: 40% !important;
     width: 55% !important;
     background-image: url(./src/assets/fondopergamino.jpg);
-    margin: 0 auto;
+    margin: 0 auto !important;
     border-radius: 15px;
     padding: .3125rem;
+<<<<<<< HEAD
     margin-top: -7% !important;
     margin-bottom: 5%;
     margin-left: 20% !important;
+=======
+    margin-top: 3% !important;
+    margin-bottom: 5% !important;
+>>>>>>> e1f0036a73948410881a5e6522b0f6151ec0223b
 }
 
 Form{
@@ -33,14 +38,18 @@ Form.Group{
 .AddNewProductcontainer{
 display: flex;
 flex-direction: row;
+margin-left: 10%;
 }
 
 #h3{
     margin-top: 6%;
     margin-bottom: 4%;
+    margin-left: 25%;
+    
     font-family: 'MedievalSharp' !important;
     font-weight: bold;
     color: black;
+    
 }
 
 label{
@@ -49,6 +58,7 @@ label{
     color: black;
     font-weight: bold;
     font-size: 1.25rem;
+    margin: 1% !important;
 }
 
 .FormInputContainer{
@@ -63,10 +73,36 @@ label{
 
 Button{
     margin-top: 4% !important;
+    margin-bottom: 5% !important;
     background: transparent !important;
     color: black !important;
     outline: 1px black solid !important;
     font-family: 'MedievalSharp' !important;
     font-size: 20px !important;
 
+
 }
+
+Button:hover{
+    background-color: #000 !important;
+    color: white !important;
+    }
+
+    @media screen and (max-width: 768px){
+
+        Form{
+            margin: 0 auto;
+            width: 95%;
+            margin-bottom: 5%;
+        }
+
+        label{
+            width: 20% !important;
+            font-family: 'MedievalSharp' !important;
+            color: black;
+            font-weight: bold;
+            font-size: 15rem !important;
+            margin: 1% !important;
+        }
+
+    }

@@ -9,7 +9,7 @@ const CreateProduct = () => {
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const [img, setImg] = useState("");
+  const [image, setImage] = useState("");
   const [stock, setStock] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [effectsDuration, setEffectsDuration] = useState("");
@@ -45,24 +45,33 @@ const CreateProduct = () => {
     let adverseEffectsInput = event.target.value;
     setAdverseEffects(adverseEffectsInput);
   };
-  const handleImgChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      setImg(reader.result)
-    };
+  // const handleImageChange = (event) => {
+  //   const file = event.target.input;
+  //   const reader = new FileReader();
+  //   reader.readAsDataURL(file);
+  //   reader.onload = () => {
+  //     setImage("image", reader.result)
+  //   };
+  //   console.log(file)
+  // };
+
+  const handleImageChange = (event) => {
+    let picture = event.target.value;
+    setImage(picture);
   };
+
   const handleStockChange = (event) => {
     let stockInput = event.target.value;
     setStock(stockInput);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { productName, description, price, img, stock, effectsDuration, ingredients, productCategory, adverseEffects };
+    let newProduct = { productName, description, price, image, stock, effectsDuration, ingredients, productCategory, adverseEffects };
     productHandler.addProduct(newProduct);
     event.target.reset()
   };
+
+  
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
@@ -76,178 +85,63 @@ const CreateProduct = () => {
         <div className="mb-3" >
           <div className='AddNewProductcontainer'>
             <label htmlFor="title" className="form-label">Nombre</label>
-            <input name="title" type="text" className='FormInputContainer' placeholder="Product name" onChange={handleProductNameChange} required />
+            <input name="title" type="text" className='FormInputContainer' placeholder="Nombre de tu producto" onChange={handleProductNameChange} required />
           </div>
           </div>
 
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label htmlFor="price" className="form-label">Precio</label>
-            <input name="price" type="number" min="1" className="form-control" placeholder="How much does it cost?" onChange={handlePriceChange} required />
+            <input name="price" type="number" min="1" className='FormInputContainer' placeholder="¿Cuánto cuesta tu producto?" onChange={handlePriceChange} required />
           </div>
         </div>
 
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label className="form-label" htmlFor="description">Descripción</label>
-            <input name="description" type="text" className="form-control" id="input-description" required placeholder="Tell us about the product." onChange={handleDescriptionChange} />
+            <input name="description" type="text" className='FormInputContainer' id="input-description" required placeholder="Escribe una breve descripción de tu producto." onChange={handleDescriptionChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label className="form-label" htmlFor="material">Ingredientes</label>
-            <input name="Ingredients" type="text" className="form-control" id="input-ingredients" required placeholder="What Ingredients is it made of?" onChange={handleIngredientsChange} />
+            <input name="Ingredients" type="text" className='FormInputContainer' id="input-ingredients" required placeholder="Escribe aquí los ingredientes de tu producto" onChange={handleIngredientsChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label className="form-label" htmlFor="effectsDuration">Duración de los efectos</label>
-            <input name="effectsDuration" type="text" className="form-control" id="input-effectsDuration" required placeholder="Type of EffectsDuration." onChange={handlEffectsDurationChange} />
+            <input name="effectsDuration" type="text" className='FormInputContainer' id="input-effectsDuration" required placeholder="Escribe aqui la duración de la poción" onChange={handlEffectsDurationChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label className="form-label" htmlFor="productcategory">Categoría</label>
-            <input name="productcategory" type="text" className="form-control" id="input-category" required placeholder="What is the category?" onChange={handlProductCategoryChange} />
+            <input name="productcategory" type="text" className='FormInputContainer' id="input-category" required placeholder="Pociones, Saumerios o Velas" onChange={handlProductCategoryChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label className="form-label" htmlFor="adverseEffects">Efectos Adversos</label>
-            <input name="adverseEffects" type="text" className="form-control" id="input-adverseEffects" required placeholder="What is the AdverseEffects?" onChange={handlAdverseEffectsChange} />
+            <input name="adverseEffects" type="text" className='FormInputContainer' id="input-adverseEffects" required placeholder="¿Cuales son los efectos adversos?" onChange={handlAdverseEffectsChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label htmlFor="stock" className="form-label">Stock</label>
-            <input name="stock" type="number" min="1" max="25" className="form-control" required placeholder="How many Stock?" onChange={handleStockChange} />
+            <input name="stock" type="number" min="1" max="25" className='FormInputContainer' required placeholder="¿Cuanto stock tienes de este" onChange={handleStockChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
-            <label htmlFor="img" className="form-label">Imagen</label>
-            <input name="img" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgChange} required />
+            <label htmlFor="image" className="form-label">Imagen</label>
+            <input name="image"  className="form-control" placeholder="Upload a picture" onChange={handleImageChange} required />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>
+        <button type="submit" className="btn btn-primary" id="btn-ad" >Enviar</button>
       </form>
     </div>
   </>
   );
 };
 export default CreateProduct;
-
-
-
-  
-
-
-//   return (
-//     <div className='FormContainer'>
-//     <Form>
-//         <h3 id='h3'>AÑADE UN NUEVO PRODUCTO</h3>
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Nuevo producto</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Añade un producto nuevo"
-//         name='ProductName'
-//         value={productName}
-//         onChange={handleProductNameChange}/>
-//         </div>
-//       </Form.Group>
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Categoría</Form.Label>
-//         <select
-//         className='FormInputContainer' type="text" 
-//         placeholder="Seleccione una categoría"
-//         name="ProductCategory"
-//         value={ProductCategory}
-//         onChange={handleProductCategoryChange}>
-//           <option value="">Seleccione una categoría</option>
-//           <option value="Potion">Pociones</option>
-//           <option value="Saumerios">Saumerios</option>
-//           <option value="Canddles">Velas</option>
-//         </select>
-//         </div>
-//       </Form.Group>
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Description</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Añade un producto nuevo"
-//         name='Description'
-//         value={Description}
-//         onChange={handleDescriptionChange}/>
-//         </div>
-//       </Form.Group>
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Ingredients</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Añade los ingredientes"
-//         name='Ingredients'
-//         value={Ingredients}
-//         onChange={handleIngredientsChange}/>
-//         </div>
-//       </Form.Group> 
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Duración</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Añade la duración "
-//         name='EffectsDuration'
-//         value={EffectsDuration}
-//         onChange={handleEffectsDurationChange}/>
-//         </div>
-//       </Form.Group>
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Efectos Adversos</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Posibles efectos secundarios"
-//         name='AdverseEffects'
-//         value={AdverseEffects}
-//         onChange={handleAdverseEffectsChange}/>
-//         </div>
-//       </Form.Group> 
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Imagen</Form.Label>
-//         <Form.Control className='FormInputContainer' type="file" 
-//         name='Image'
-//         value={Image}
-//         onChange={handleImageChange}/>
-//         </div>
-//       </Form.Group> 
-
-//       <Form.Group  className="mb-3" controlId="formBasicEmail">
-//         <div className='AddNewProductcontainer'>
-//         <Form.Label>Precio</Form.Label>
-//         <Form.Control className='FormInputContainer' type="text" 
-//         placeholder="Seleccione un precio"
-//         name='Price'
-//         value={Price}
-//         onChange={handlePriceChange}/>
-//         </div>
-//       </Form.Group> 
-      
-
-//       <Button variant="primary" type="submit">
-//         Crear
-//       </Button>
-//     </Form>
-//     </div>
-//   );
-// }
-
-// export default NewProductForm;
-
-

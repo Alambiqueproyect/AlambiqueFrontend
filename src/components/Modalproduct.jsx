@@ -7,13 +7,15 @@ import Table from 'react-bootstrap/Table';
 
 
 
-const Modalproduct = ({ show, handleClose, product }) => {
-//   console.log(product)
+const Modalproduct = ({ show, handleClose,}) => {
+
 
   return (
     <Modal show={show} onHide={handleClose} size="lg">
+
+
       <Modal.Header closeButton>
-        <Modal.Title id="ProductTitle"> PRECIO€ - NOMBRE  </Modal.Title>
+        <Modal.Title id="ProductTitle"> PRICE - NAME  </Modal.Title> 
         </Modal.Header>
         <Modal.Body>
                   <Card className="text-center" style={{ width: '90%'}} border="light">
@@ -58,7 +60,6 @@ const Modalproduct = ({ show, handleClose, product }) => {
                           </Card.Text>
                         </Card.Body>
                   </Card>
-                  
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -67,6 +68,7 @@ const Modalproduct = ({ show, handleClose, product }) => {
           
         </Modal.Footer>
       </Modal>)
+      
 };
 
 export default Modalproduct;

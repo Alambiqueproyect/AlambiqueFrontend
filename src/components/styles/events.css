@@ -10,3 +10,38 @@
     font-family: 'MedievalSharp';
     font-weight: bold;
 }
+
+.CardGroup{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+
+
+}
+
+.cardStyle{
+    margin: .9375rem;
+}
+
+@media screen and (max-width: 768px){
+    
+    .CardGroup{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 1.25rem;
+    
+    
+    }
+
+    .cardStyle{
+        margin: .9375rem;
+        width: 100% !important;
+    }
+
+}

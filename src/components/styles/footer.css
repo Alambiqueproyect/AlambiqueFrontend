@@ -1,73 +1,67 @@
 
-@font-face{
-    font-family: 'MedievalSharp'!important;
-    src: url(.src/assets/font/MedievalSharp-Regular.ttf) format('truetype') !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    }
+.p-4{
+    background-color:rgb(103,11,9) !important;
+    margin-top: 0%;
+    line-height: 100%;
+    width: 100%;
+ 
+}
 
-#f-container {
-    font-family:'MedievalSharp'!important;
+#FooterContainer{
+    background-color:rgb(103,11,9) !important;
+}
+
+.bg-dark {
     background-color: rgba(103, 11, 9, var(--mdb-bg-opacity)) !important;
-    width: 100% !important;
-    height: 28% !important;
 }
 
-.p-4 {
-    font-family:'MedievalSharp'!important;
-    background-color: #670b09 !important;
-    line-height: 100% !important;
-    width: 100% !important;
-
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    line-height: 160%;
 }
 
-.links {
-    font-family:'MedievalSharp' !important;
-    margin-left: 20% !important;
-    line-height: 160% !important;
-    margin-top: -2% !important;
+.pt-2{
+    margin-right: 10%;
+    line-height: 100%;
 }
 
-.pt-2 {
-    line-height: 100% !important;
-    
-}
-
-.mb-4 {
-
-    text-align: center !important;
-    color: white !important;
-    
-}
-
-.newsletter{
-    margin-left: 15% !important;
-
+.mb-4{
+    padding-right: 0%;
+    text-align: center;
+    margin-left: 5%;
 }
 
 #suscribe {
-  
     margin-top: -8% !important;
     font-size: medium !important;
     color: white !important;
     margin-left: 10% !important;
 }
 
-@media (min-width: 360px) and (max-width: 760px) {
+.links {
+    font-family:'MedievalSharp' !important;
+    margin-left: 55% !important;
+    line-height: 160% !important;
+    margin-top: -2% !important;
+    
+}
 
-    .p-4 {
-        background-color:  #670b09 !important;
+@media (min-width: 360px) and (max-width: 760px){
 
+    .p-4{
+        background-color:rgb(33,37,41);
+     
+    }
+    
+    .links{
+        margin: 0 auto !important;
+        margin-left: 10% !important;
     }
 
-    .links {
-        line-height: 180%;
-        margin-top: -5%;
-        margin-left: 3%;
-    }
-
-    .pt-2 {
+    .pt-2{
         margin-right: 0%;
         padding-bottom: 0%;
     }
-}
+}   
