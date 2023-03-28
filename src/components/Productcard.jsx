@@ -38,6 +38,7 @@ const Productcard = () => {
                {p.description}
                 </Card.Text>
                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+          
             </Card.Body>
             </Card>
             
