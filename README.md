@@ -48,7 +48,7 @@ Our client is a spanish witch who wants to sell her potions, candles and solutio
 
 1. Clone the project
 ```bash
- git clone https://github.com/24teamhackaton/marketplace.git
+ git clone https://github.com/Alambiqueproyect
 ```
 2. Start command
 ```
