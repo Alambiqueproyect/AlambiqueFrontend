@@ -47,30 +47,7 @@ export default function ProductList() {
     const data = await productHandler.loadProducts();
     setProducts(data);
   };
-  // return (
-  //   <>
-  //       <div className="CardContainer">
-          
-  //       <Modalproduct show={show} handleClose={handleClose} />
-  //       {
-  //         productlist.map(p =>(
-  //           <Card style={{ width: '18rem' }} key={p.id} id="card">
-  //           <Card.Header>{p.productName}</Card.Header>
-  //           <Card.Img variant="top" src={p.image} className="imagecard"/>
-  //           <Card.Body>
-  //               <Card.Text>
-  //              {p.description}
-  //               </Card.Text>
-  //               <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
-  //           </Card.Body>
-  //           </Card>
-            
-  //         ))
-          
-  //       }
-
-  
-
+ 
   const handleCheckBox = (event) => {
     let searchInput = event.target.value;
 
@@ -92,13 +69,14 @@ export default function ProductList() {
   if (searchValues.length !== 0 || searchValue.length !== 0) {
     return (
       <>
-        <Form className="d-flex">
+        <Form className="d-flex" >
           <Form.Control
             onChange={handleSearch}
             type="search"
             placeholder="Search"
             className="me-2"
             aria-label="Search"
+            id='searchInput'
           />
           <Button className="btn">
            Search

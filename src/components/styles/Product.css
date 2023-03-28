@@ -7,12 +7,14 @@
 
 .me-2{
     margin: 5px;
+    margin-top: 4%;
+    margin-left: 25%;
     background: #fffce5;
     border-radius: 15px;
     font-family: 'MedievalSharp' !important;
-    font-size: 15px;
+    font-size: 30px;
     color: #000;
-
+    height:20% ;
 }
 
 .btn{
