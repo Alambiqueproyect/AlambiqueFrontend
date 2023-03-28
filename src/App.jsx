@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import ProductList from './components/Productcard'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
     < div>
       <Navbar/>
       <CarouselElement/>
-      <Productcard/>
+      <ProductList/>
       <Footer/>
     </div>
     
