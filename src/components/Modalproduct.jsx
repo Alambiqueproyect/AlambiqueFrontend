@@ -1,28 +1,56 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
+import { productHandler } from '../handlers/productHandler';
+import { useParams} from 'react-router';
+
 
 
 
 
 const Modalproduct = ({ show, handleClose,}) => {
 
+  const { id } = useParams();
+  const [product, setProduct] = useState("");
+ 
+  useEffect(() => {
+    async function fetchProduct() {
+      const productData = await productHandler.loadProduct(id);
+      setProduct(productData);
+    }
+    fetchProduct();
+  }, [id]);
+
+  // const deleteImage = async (id) => {
+  //   setImage(image.filter((i) => i.id !== id));
+  //   await ImageHandler.deleteImage(id);
+  // };
+
+console.log(product)
+  let productInfo = product;
+
+
 
   return (
-    <Modal show={show} onHide={handleClose} size="lg">
+    <>
+    {/* {
+      
+      productInfo.map((p) =>( */}
+
+        <Modal show={show} onHide={handleClose} size="lg">
 
 
       <Modal.Header closeButton>
-        <Modal.Title id="ProductTitle"> PRICE - NAME  </Modal.Title> 
+        <Modal.Title id="ProductTitle" key={productInfo.id}> {productInfo.productName}  </Modal.Title> 
         </Modal.Header>
         <Modal.Body>
                   <Card className="text-center" style={{ width: '90%'}} border="light">
                         <Card.Img variant="top" src="src\assets\images\potiondefault.jpg" />
                         <Card.Body>
                           <Card.Text>
-                           <p>  Descripción  </p>
+                           <p>  {productInfo.description}  </p>
                            <Table striped bordered hover>
                               <tbody>
                                 <tr>
@@ -67,8 +95,15 @@ const Modalproduct = ({ show, handleClose,}) => {
           </Button>
           
         </Modal.Footer>
-      </Modal>)
+      </Modal>
+
+      {/* ))
+    } */}
+    </>
+  )
+
+    
       
-};
+}
 
 export default Modalproduct;

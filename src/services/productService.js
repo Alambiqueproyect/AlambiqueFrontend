@@ -21,7 +21,7 @@ export const productService = {
         return allProducts;
     },
     async getProduct(id) {
-        let response = await apiClient.get("/" + id);
+        let response = await apiClient.get("/Product/GetProductById?id=" + id);
         if (!response==200)
         throw {
             status: response.status,

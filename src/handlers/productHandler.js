@@ -6,12 +6,11 @@ export const productHandler = {
             return;
         }
         let newProductStructure = {
-            "id": 0,
             "productName": newProduct.productName,
             "price": newProduct.price,
             "description": newProduct.description,
-            "img": newProduct.img,
-            "stock": newProduct.stock,
+            "image": newProduct.image,
+            "stocks": newProduct.stocks,
             "effectsDuration": newProduct.effectsDuration,
             "adverseEffects": newProduct.adverseEffects,
             "productCategory": newProduct.productCategory,
@@ -28,6 +27,7 @@ export const productHandler = {
     loadProduct(id) {
         return productService.getProduct(id);
     },
+    
     deleteProduct(id) {
         return productService.deleteProduct(id);
     },
@@ -40,13 +40,19 @@ export const productHandler = {
             "productname": updatedProduct.productname,
             "price": updatedProduct.price,
             "description": updatedProduct.description,
-            "img": updatedProduct.img,
-            "stock": updatedProduct.stock,
+            "image": updatedProduct.image,
+            "stocks": updatedProduct.stocks,
             "effectsduration": updatedProduct.effectsduration,
             "adverseeffects": updatedProduct.adverseeffects,
             "category": updatedProduct.category,
             "ingredients": updatedProduct.ingredients,
         }
         return productService.updateProduct(id, updatedProductStructure);
-    }
+    },
+
+    async fetchProduct({ params }) {
+        const product = await productHandler.loadProduct(params. id);
+        return { product };
+    },
+
 }

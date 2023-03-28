@@ -5,6 +5,7 @@ import { productHandler } from '../handlers/productHandler';
 import './styles/Productcardstyle.css'
 import { Form } from "react-bootstrap";
 import "./styles/Product.css";
+import { Link } from 'react-router-dom';
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -16,8 +17,7 @@ export default function ProductList() {
   const handleShow = () => setShow(true);
     
 
-  console.log({ searchValue });
-
+ 
   useEffect(() => {
     getData();
   }, []);
@@ -130,22 +130,20 @@ export default function ProductList() {
             />
           </div>
         </div>
-        <div className="block--search-container">
-          
-            <Modalproduct show={show} handleClose={handleClose} />
-            {filteredProducts.map((item) => (
-               <Card style={{ width: '18rem' }} key={item.id} id="card">
-               <Card.Header>{item.productName}</Card.Header>
-               <Card.Img variant="top" src={item.image} className="imagecard"/>
-               <Card.Body>
-                   <Card.Text>
-                  {item.description}
-                   </Card.Text>
-                   <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
-               </Card.Body>
-               </Card>
-            ))}
-          
+        <div className="CardContainer">
+        {/* <Modalproduct show={show} handleClose={handleClose}/> */}
+          {filteredProducts.map((item) => (
+             <Card style={{ width: '18rem' }} key={item.id} id="card">
+             <Card.Header>{item.productName}</Card.Header>
+             <Card.Img variant="top" src={item.image} className="imagecard"/>
+             <Card.Body>
+                 <Card.Text>
+                {item.description}
+                 </Card.Text>
+                 <Link to={`detailView/${item.id}`}><Button variant="secondary" onClick={handleShow}>Más detalles</Button></Link>
+             </Card.Body>
+             </Card>
+          ))}
         </div>
       </>
     );
@@ -192,7 +190,7 @@ export default function ProductList() {
           </div>
         </div>
         <div className="CardContainer">
-        <Modalproduct show={show} handleClose={handleClose} />
+        {/* <Modalproduct show={show} handleClose={handleClose}/> */}
           {products.map((item) => (
              <Card style={{ width: '18rem' }} key={item.id} id="card">
              <Card.Header>{item.productName}</Card.Header>
@@ -201,7 +199,7 @@ export default function ProductList() {
                  <Card.Text>
                 {item.description}
                  </Card.Text>
-                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+                 <Link to={`detailView/${item.id}`}><Button variant="secondary" onClick={handleShow}>Más detalles</Button></Link>
              </Card.Body>
              </Card>
           ))}
