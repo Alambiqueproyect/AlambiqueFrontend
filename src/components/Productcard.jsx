@@ -89,22 +89,31 @@ export default function ProductList() {
           </div>
 
           <div className="filtro">
-            <label className="label">Amor</label>
+            <label className="label">Pociones</label>
             <input
               className=" input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="Amor"
+              value="Poción"
             />
           </div>
 
           <div className="filtro">
-            <label className="label">Tech Skills</label>
+            <label className="label">Saumerios</label>
             <input
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="TechSkills"
+              value="Saumerios"
+            />
+          </div>
+          <div className="filtro">
+            <label className="label">Otros</label>
+            <input
+              className=" input"
+              type="checkbox"
+              onChange={handleCheckBox}
+              value="Otros"
             />
           </div>
         </div>
@@ -150,22 +159,31 @@ export default function ProductList() {
           </div>
 
           <div className="filtro">
-            <label label="label">Amor</label>
+            <label label="label">Pociones</label>
             <input
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="Amor"
+              value="Poción"
             />
           </div>
 
           <div className="filtro">
-            <label className="label">Tech Skills</label>
+            <label className="label">Saumerios</label>
             <input
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="TechSkills"
+              value="Saumerio"
+            />
+          </div>
+          <div className="filtro">
+            <label label="label">Otros</label>
+            <input
+              className="input"
+              type="checkbox"
+              onChange={handleCheckBox}
+              value="Otros"
             />
           </div>
         </div>
@@ -184,27 +202,6 @@ export default function ProductList() {
              </Card>
           ))}
         </div>
-
-        {/* <div className="CardContainer">
-          
-          
-          {
-            products.map(p =>(
-              <Card style={{ width: '18rem' }} key={p.id} id="card">
-              <Card.Header>{p.productName}</Card.Header>
-              <Card.Img variant="top" src={p.image} className="imagecard"/>
-              <Card.Body>
-                  <Card.Text>
-                 {p.description}
-                  </Card.Text>
-                  <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
-              </Card.Body>
-              </Card>
-              
-            ))
-            
-          }
-        </div> */}
       </>
     );
 }

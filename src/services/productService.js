@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const apiClient = axios.create({
     baseURL: 'https://localhost:7227',
     withCredentials: false,
@@ -8,7 +7,6 @@ const apiClient = axios.create({
       'Content-Type': 'application/json'
     }
 })
-
 export const productService = {
     async getProducts() {
         let response = await apiClient.get("/Product/GetAll");
@@ -34,7 +32,7 @@ export const productService = {
         await apiClient.post("/Product/Post?userName=Bruja%20Aver%C3%ADa&userPassword=123456", newProduct)
     },
     async deleteProduct(id){
-        await apiClient.delete("/" + id)
+        await apiClient.delete("Product/Delete?userName=Bruja%20Aver%C3%ADa&userPassword=123456&Id=" + id)
     },
     async updateProduct(id, updatedProduct){
         await apiClient.patch("/" + id, updatedProduct)
