@@ -61,7 +61,7 @@ const EditForm = () => {
   
   <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label htmlFor="id"></Form.Label>
-        <Form.Control name='id' defaultValue={p.id}/>
+        <Form.Control name='id' type='hidden' defaultValue={p.id}/>
       </Form.Group>
 
 
