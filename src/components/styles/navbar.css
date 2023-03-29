@@ -1,0 +1,116 @@
+@font-face{
+  font-family: 'MedievalSharp';
+  src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #670809;
+  font-family: 'MedievalSharp' ;
+  color: #FFFCE5;
+  height: 100px;
+  padding: 0 20px;
+ 
+  
+}
+
+.nav_logo img {
+  height: 60px;
+  width: 60px;
+  margin-left: 15px;
+  transition: transform 0.8s ease;
+
+}
+
+.nav_logo img:hover {
+  transform: rotateY(360deg);
+  /*transition: transform 0.8s;*/
+}
+
+.nav_items {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+  align-items: center;
+  font-family: 'MedievalSharp' !important;
+  
+}
+
+.nav_items a {
+  margin-right: 10px;
+  color: #FFFCE5;
+  text-decoration: none;
+  font-size: 1.5625rem;
+  font-weight: bold;
+}
+
+.nav_toggle {
+  display: none;
+  margin-left: auto;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    height: 129px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  .nav_items {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #670809;
+    padding: 10px;
+    z-index: 1;
+  }
+  .nav_logo {
+    z-index: 2;
+  }
+
+  .nav_logo img {
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    transition: transform 0.8s ease;
+  }
+  
+  .nav_logo img:hover {
+    transform: rotateY (360deg);
+   
+  }
+
+  .nav_items.active {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-content: center;
+  }
+
+  .nav_toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav_toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #FFFCE5;
+    margin: 5px ls
+  }
+
+}
