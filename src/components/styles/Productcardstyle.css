@@ -25,6 +25,8 @@
 
 .card{
     background: url(./src/assets/fondopergamino.jpg);
+    padding: .9375rem !important;
+    margin-bottom: .625rem !important;
     
 }
 

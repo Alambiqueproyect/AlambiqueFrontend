@@ -8,7 +8,7 @@ export function CarouselElement() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./src/assets/images/Carrousel1.png"
+          src="src\assets\images\caruselDefinitivo4.png"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -19,7 +19,7 @@ export function CarouselElement() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="src\assets\images\Carrousel6.png"
+          src="src\assets\images\caruselDefinitivo3.png"
           alt="Second slide"
         />
 
@@ -31,7 +31,7 @@ export function CarouselElement() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="src\assets\images\Carrousel7.png"
+          src="src\assets\images\CarrouselOscurecido2.png"
           alt="Third slide"
         />
 

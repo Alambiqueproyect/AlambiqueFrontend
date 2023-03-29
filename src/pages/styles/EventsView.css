@@ -11,3 +11,8 @@ h1{
     font-size: 3.125rem;
     margin-top: 3%;
 }
+
+#componentsContainer{
+  display: flex;
+  flex-direction: row;
+}
