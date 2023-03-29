@@ -129,7 +129,7 @@ const CreateProduct = () => {
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label htmlFor="stock" className="form-label">Stock</label>
-            <input name="stock" type="number" min="1" max="25" className='FormInputContainer' required placeholder="¿Cuanto stock tienes de este" onChange={handleStockChange} />
+            <input name="stock" type="number" min="1" max="999" className='FormInputContainer' required placeholder="¿Cuanto stock tienes de este" onChange={handleStockChange} />
           </div>
         </div>
         <div className="mb-3">
