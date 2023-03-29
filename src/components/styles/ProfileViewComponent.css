@@ -93,15 +93,18 @@ p{
             margin-left: 17%;
         }
 
-        #soyUnProductito{
+        #ProductContainer{
             width: 100%;
-            height: 31.25rem;
-            margin: .625rem;
-            background-color: antiquewhite;
+            margin: .0rem !important;
+            background-color: transparent;
             border-radius: .625rem;
             font-family: 'MedievalSharp';
             font-size: 2.5rem;
-        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
         }
 
 }

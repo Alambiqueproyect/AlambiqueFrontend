@@ -82,41 +82,42 @@ export default function ProductList() {
            Search
           </Button>          
         </Form>
+        
+            <div className="Container1">
+              <div className="filtro">
+                <p>MOSTRAR</p>
+              </div>
 
-        <div className="Container1">
-          <div className="filtro">
-            <p>MOSTRAR</p>
-          </div>
+              <div className="filtro">
+                <label className="label">Pociones</label>
+                <input
+                  className=" input"
+                  type="checkbox"
+                  onChange={handleCheckBox}
+                  value="Poción"
+                />
+              </div>
 
-          <div className="filtro">
-            <label className="label">Pociones</label>
-            <input
-              className=" input"
-              type="checkbox"
-              onChange={handleCheckBox}
-              value="Poción"
-            />
-          </div>
-
-          <div className="filtro">
-            <label className="label">Saumerios</label>
-            <input
-              className="input"
-              type="checkbox"
-              onChange={handleCheckBox}
-              value="Saumerios"
-            />
-          </div>
-          <div className="filtro">
-            <label className="label">Otros</label>
-            <input
-              className=" input"
-              type="checkbox"
-              onChange={handleCheckBox}
-              value="Otros"
-            />
-          </div>
-        </div>
+              <div className="filtro">
+                <label className="label">Saumerios</label>
+                <input
+                  className="input"
+                  type="checkbox"
+                  onChange={handleCheckBox}
+                  value="Saumerios"
+                />
+              </div>
+              <div className="filtro">
+                <label className="label">Otros</label>
+                <input
+                  className=" input"
+                  type="checkbox"
+                  onChange={handleCheckBox}
+                  value="Otros"
+                />
+              </div>
+            </div>
+        
         <div cclassName="CardContainer">
           
             <Modalproduct show={show} handleClose={handleClose} />

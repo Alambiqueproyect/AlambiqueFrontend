@@ -13,6 +13,10 @@ function ProfileViewComponent() {
 
         <div className="ProfileViewContainer">
           <div className="SettingContainer">
+          <div className="settingObjet">
+            <a href="http://localhost:5173/newproduct" id="newProductId"><h3 >Nuevo Producto</h3></a>
+              <img className="profileViewIcon" id='wishlistico' src="src\assets\plusicon.png" alt="plus" />
+            </div>
             <div className="settingObjet">
               <h3>Favoritos</h3>
               <img className="profileViewIcon" id='wishlistico' src="src\assets\Star.png" alt="star" />

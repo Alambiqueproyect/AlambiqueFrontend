@@ -29,7 +29,7 @@ let eventlist = events
         
             <Card className='cardStyle' style={{ width: '10rem' }} key={e.id}>
             <CardHeader id="cardHeatherID">{e.name}</CardHeader>
-            <Card.Img variant="top" src={"holder.js/100px180"} />
+            <Card.Img variant="top" src={e.image} />
             <Card.Body>
                 <Card.Text>{e.description}
                 </Card.Text>
