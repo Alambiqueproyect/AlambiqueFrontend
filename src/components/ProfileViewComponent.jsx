@@ -18,7 +18,7 @@ function ProfileViewComponent() {
               <img className="profileViewIcon" id='wishlistico' src="src\assets\Star.png" alt="star" />
             </div>
             <div className="settingObjet">
-              <h3>Mis pedidos</h3>
+              <h3>Pedidos</h3>
               <p><img className="profileViewIcon" id='orderico' src="src\assets\Package.png" alt="package" /></p>
             </div>
             <div className="settingObjet">
@@ -31,7 +31,7 @@ function ProfileViewComponent() {
           </div>
           
         </div>
-        <div id="ProductContainer"></div>
+        {/* <div id="ProductContainer"></div> */}
     </div>
     </>
   );
