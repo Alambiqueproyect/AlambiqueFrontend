@@ -6,6 +6,7 @@ export const productHandler = {
             return;
         }
         let newProductStructure = {
+            "id": newProduct.id,
             "productName": newProduct.productName,
             "price": newProduct.price,
             "description": newProduct.description,
@@ -36,15 +37,15 @@ export const productHandler = {
             return;
         }
         let updatedProductStructure = {
-            "id": "",
-            "productname": updatedProduct.productname,
+            id: updatedProduct.id,
+            "productName": updatedProduct.productName,
             "price": updatedProduct.price,
             "description": updatedProduct.description,
             "image": updatedProduct.image,
-            "stocks": updatedProduct.stocks,
-            "effectsduration": updatedProduct.effectsduration,
-            "adverseeffects": updatedProduct.adverseeffects,
-            "category": updatedProduct.category,
+            "stock": updatedProduct.stock,
+            "effectsDuration": updatedProduct.effectsDuration,
+            "adverseEffects": updatedProduct.adverseEffects,
+            "productCategory": updatedProduct.productCategory,
             "ingredients": updatedProduct.ingredients,
         }
         return productService.updateProduct(id, updatedProductStructure);

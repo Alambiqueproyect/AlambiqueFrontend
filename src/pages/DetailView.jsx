@@ -11,7 +11,6 @@ function DetailView() {
   return (
     <>
     <Modalproduct />
-    <p>Dátelas</p>
     </>
 
   )

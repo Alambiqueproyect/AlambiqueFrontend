@@ -11,6 +11,7 @@ import EventView from "../pages/EventView";
 import ProfileView from "../pages/ProfileView";
 import DetailView from "../pages/DetailView";
 import { productHandler } from "../handlers/productHandler";
+import EditView from "../pages/EditView";
 
 const Router = () => {
 
@@ -23,6 +24,7 @@ const Router = () => {
             <Route path='/events' element= {<EventView/>}/>
             <Route path='/profile' element= {<ProfileView/>}/>
             <Route path='/detailView/:id' element= {<DetailView/>} loader={fetchProduct}/>
+            <Route path='/editProduct/:id' element= {<EditView/>} loader={fetchProduct}/>
         </Routes>
     </BrowserRouter>
     )
