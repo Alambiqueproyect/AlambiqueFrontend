@@ -11,6 +11,6 @@ test('There is a button', () => {
     }))
     render (<NewProductForm show={true} />)
     screen.debug()
-    const button = screen.getByText(/Crear/i);
+    const button = screen.getByText(/Enviar/i);
     expect(button).toBeInTheDocument();
   });

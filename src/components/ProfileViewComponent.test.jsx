@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import CarouselElement from './CarouselElement';
+import ProfileViewComponent from './ProfileViewComponent';
 import '@testing-library/jest-dom';
 
 test('should contain a image element', () => { 
-    render(<CarouselElement />); 
-    const ImageElement = screen.getByAltText(/First slide/i); 
+    render(<ProfileViewComponent />); 
+    const ImageElement = screen.getByAltText(/Ororo/i); 
     expect(ImageElement).toBeInTheDocument(); 
 });
