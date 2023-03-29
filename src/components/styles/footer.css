@@ -48,6 +48,10 @@
     
 }
 
+.m-1{
+    background-color: transparent !important;
+    color: white !important;
+}
 @media (min-width: 360px) and (max-width: 760px){
 
     .p-4{

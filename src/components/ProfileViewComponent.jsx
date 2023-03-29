@@ -31,7 +31,7 @@ function ProfileViewComponent() {
           </div>
           
         </div>
-        <div id="soyUnProductito"></div>
+        <div id="ProductContainer"></div>
     </div>
     </>
   );

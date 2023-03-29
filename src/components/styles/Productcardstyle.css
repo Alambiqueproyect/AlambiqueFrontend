@@ -1,4 +1,9 @@
-
+@font-face{
+    font-family: 'MedievalSharp';
+    src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype') !important;
+    font-style: normal;
+    font-weight: normal;
+    }
 
 .CardContainer{
     display: flex;
@@ -20,8 +25,14 @@
 
 .card{
     background: url(./src/assets/fondopergamino.jpg);
+    
 }
 
+#itemTittle{
+    font-family: 'MedievalSharp';
+    font-weight: bold;
+    font-size: 1.5625rem;
+}
 
 @media screen and (max-width: 768px){
 

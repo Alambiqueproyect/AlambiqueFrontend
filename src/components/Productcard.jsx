@@ -117,12 +117,12 @@ export default function ProductList() {
             />
           </div>
         </div>
-        <div className="block--search-container">
+        <div cclassName="CardContainer">
           
             <Modalproduct show={show} handleClose={handleClose} />
             {filteredProducts.map((item) => (
                <Card style={{ width: '18rem' }} key={item.id} id="card">
-               <Card.Header>{item.productName}</Card.Header>
+               <Card.Header id="itemTittle">{item.productName}</Card.Header>
                <Card.Img variant="top" src={item.image} className="imagecard"/>
                <Card.Body>
                    <Card.Text>
@@ -174,7 +174,7 @@ export default function ProductList() {
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="Saumerio"
+              value="Saumeríos"
             />
           </div>
           <div className="filtro">
@@ -191,7 +191,7 @@ export default function ProductList() {
         <Modalproduct show={show} handleClose={handleClose} />
           {products.map((item) => (
              <Card style={{ width: '18rem' }} key={item.id} id="card">
-             <Card.Header>{item.productName}</Card.Header>
+             <Card.Header id="itemTittle">{item.productName}</Card.Header>
              <Card.Img variant="top" src={item.image} className="imagecard"/>
              <Card.Body>
                  <Card.Text>
