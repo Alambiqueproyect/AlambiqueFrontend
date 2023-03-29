@@ -37,6 +37,6 @@ export const productService = {
         await apiClient.delete("/" + id)
     },
     async updateProduct(id, updatedProduct){
-        await apiClient.patch("/" + id, updatedProduct)
+        await apiClient.patch("/Product/Patch?userName=Bruja%20Aver%C3%ADa&userPassword=123456&Id" + id, updatedProduct)
     }
 }

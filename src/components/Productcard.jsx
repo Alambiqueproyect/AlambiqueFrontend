@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import Modalproduct from './Modalproduct';
 import { productHandler } from '../handlers/productHandler';
 import './styles/Productcardstyle.css'
-
+import { Link } from 'react-router-dom';
 const Productcard = () => {
 
     const [show, setShow] = useState(false);
@@ -38,6 +38,7 @@ const Productcard = () => {
                {p.description}
                 </Card.Text>
                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+                <Link to= {`/editproduct/${p.id}`}><Button type="submit" className="btn btn-primary" id="btn-ad">Editar</Button></Link>
           
             </Card.Body>
             </Card>

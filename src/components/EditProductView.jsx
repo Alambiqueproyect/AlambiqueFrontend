@@ -8,7 +8,7 @@ function EditProduct() {
     const { productName } = useLoaderData();
     const id = product.id; const [price, setPrice] = useState(product.price);
     const [description, setDescription] = useState(product.description);
-    const [img, setImg] = useState(product.img);
+    const [image, setImage] = useState(product.image);
     const [stock, setStock] = useState(product.stock);
     const [ingredients, setIngredients] = useState(product.ingredients);
     const [effectsDuration, setEffectsDuration] = useState(product.effectsDuration);
@@ -16,14 +16,14 @@ function EditProduct() {
     const [productCategory, setProductCategory] = useState(product.productCategory);
 
 
-    const handleProductNameChange = (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = () => {
-            setProductName(reader.result);
-        }
-    };
+    // const handleProductNameChange = (event) => {
+    //     const file = event.target.files[0];
+    //     const reader = new FileReader();
+    //     reader.readAsDataURL(file);
+    //     reader.onload = () => {
+    //         setProductName(reader.result);
+    //     }
+    // };
 
     const handleDescriptionChange = (event) => {
         let descriptionInput = event.target.value;
@@ -50,16 +50,12 @@ function EditProduct() {
         setIngredients(ingredientsInput);
     };
 
-    const handleImgChange = (event) => {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = () => {
-            setImg(reader.result);
-        };
+    const handleImageChange = (event) => {
+        let imageInput=event.target.value;
+        setImage(imageInput)
     };
 
-    const handleTitleChange = (event) => {
+    const handleProductNameChange = (event) => {
         let titleInput = event.target.value;
         setTitle(titleInput);
     };
@@ -71,7 +67,7 @@ function EditProduct() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let updatedProduct = { productName, description, price, img, stock, effectsDuration, ingredients, productCategory, adverseEffects };
+        let updatedProduct = { productName, description, price, image, stock, effectsDuration, ingredients, productCategory, adverseEffects };
         productHandler.updateProduct(id, updatedProduct);
 
 
@@ -80,17 +76,17 @@ function EditProduct() {
             <>
 
                 <div className="EditFormContainer">
-                    <h1>Estás editando el product: {product.title}</h1>
+                    <h1>Estás editando el product: {product.productName}</h1>
                     <form onSubmit={handleSubmit} itemID="form1">
                         <h3 id="h3">Edita el producto</h3>
                         <div className="mb-3" >
                             <div className='AddNewProductcontainer'>
-                                <label htmlFor="title" className="form-label">Nombre</label>
-                                <input name="title" type="text" className='FormInputContainer' placeholder="Product name" onChange={handleProductNameChange} required />
+                                <label htmlFor="productName" className="form-label">Nombre</label>
+                                <input name="productName" type="text" className='FormInputContainer' placeholder="product.productName" onChange={handleProductNameChange} required />
                             </div>
                         </div>
 
-                        <div className="mb-3">
+                        {/* <div className="mb-3">
                             <div className='AddNewProductcontainer'>
                                 <label htmlFor="price" className="form-label">Precio</label>
                                 <input name="price" type="number" min="1" className="form-control" placeholder="How much does it cost?" onChange={handlePriceChange} required />
@@ -135,11 +131,12 @@ function EditProduct() {
                         </div>
                         <div className="mb-3">
                             <div className='AddNewProductcontainer'>
-                                <label htmlFor="img" className="form-label">Imagen</label>
-                                <input name="img" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgChange} required />
+                                <label htmlFor="image" className="form-label">Imagen</label>
+                                <input name="image" type="text" className="form-control" placeholder="Upload a picture" onChange={handleImageChange} required />
                             </div>
-                        </div>
-                        <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button>
+                        </div>*/
+                        <button type="submit" className="btn btn-primary" id="btn-ad">Enviar</button> }
+                        
                     </form>
                 </div>
             </>

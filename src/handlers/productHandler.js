@@ -40,7 +40,7 @@ export const productHandler = {
             "productname": updatedProduct.productname,
             "price": updatedProduct.price,
             "description": updatedProduct.description,
-            "img": updatedProduct.img,
+            "image": updatedProduct.image,
             "stocks": updatedProduct.stocks,
             "effectsduration": updatedProduct.effectsduration,
             "adverseeffects": updatedProduct.adverseeffects,
