@@ -25,9 +25,9 @@ function App() {
       <Navbar/>
       <CarouselElement/>
       <ProductList/>
-      {
+      {/* {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
+      } */}
       {/* <Register /> */}
       <Footer/>
     </div>
