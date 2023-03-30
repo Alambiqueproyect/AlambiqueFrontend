@@ -10,4 +10,14 @@
         height: 40%;
         margin: 10% auto;
     }
+
+    .carouselH3{
+        font-size: 1rem;
+        margin-top: .625rem;
+    }
+
+    .carouselp{
+        font-size: .625rem !important
+        ;
+    }
 }
