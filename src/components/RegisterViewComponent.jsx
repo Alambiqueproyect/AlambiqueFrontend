@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Register = (props) => {
+export const RegisterViewComponent = (props) => {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const handleSubmit = (event) =>{

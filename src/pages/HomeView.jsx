@@ -1,25 +1,23 @@
-import React from 'react'
-import './App.css'
-import CarouselElement  from './components/CarouselElement'
-import ProductList from './components/ProductList'
-import Footer from './components/footer.jsx'
-import Navbar from './components/Navbar'
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import ProductList from './components/ProductList'
+import React from 'react';
+import ProductList from '../components/ProductList';
+import Navbar from '../components/Navbar';
+import CarouselElement from '../components/CarouselElement';
+import Footer from '../components/Footer';
+
+
 
 function App() {
 
-  return (
+    return (
 
-    < div>
-      <Navbar/>
-      <CarouselElement/>
-      <ProductList/>
-      <Footer/>
-    </div>
-    
-  )
+        < div>
+            <Navbar />
+            <CarouselElement />
+            <ProductList />
+            <Footer />
+        </div>
+
+    )
 }
 
 export default App

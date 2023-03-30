@@ -9,6 +9,7 @@ import App from "../App";
 import ContactUsView from "../pages/ContactUsView";
 import EventView from "../pages/EventView";
 import ProfileView from "../pages/ProfileView";
+import HomeView from "../pages/HomeView";
 
 const Router = () => {
 
