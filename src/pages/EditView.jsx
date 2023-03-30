@@ -4,13 +4,13 @@ import React from "react"
 
 function EditView() {
 
-    return (
-      <>
+  return (
+    <>
       <EditForm />
-      
-      </>
-  
-    )
-  }
-  
-  export default EditView
+
+    </>
+
+  )
+}
+
+export default EditView

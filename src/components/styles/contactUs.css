@@ -1,11 +1,11 @@
-@font-face{
+@font-face {
   font-family: 'MedievalSharp';
   src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
-  }
+}
 
- .ContactUs {
+.ContactUs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@
   background: cover; */
   height: 100%;
 }
+
 .FormContainer {
   background-image: url(./src/assets/fondopergamino.jpg);
   height: 25%;
@@ -23,27 +24,27 @@
   padding: .3125rem;
   justify-content: center;
   align-items: center;
-  }
+}
 
-  .Form{
+.Form {
   margin: 0 auto 5%;
   width: 80%;
-  }
+}
 
-  .Form.Group{
+.Form.Group {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
-  }
+}
 
-  .Contactcontainer{
+.Contactcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  }
+}
 
-  #h3{
+#h3 {
   margin-top: 6%;
   margin-bottom: 4%;
   font-family: 'MedievalSharp' !important;
@@ -51,18 +52,18 @@
   color: #000;
   font-size: 2rem;
   text-align: center;
-  }
+}
 
-  label{
+label {
   width: 30% !important;
   font-family: 'MedievalSharp' !important;
   color: #000 !important;
   font-weight: bold !important;
   font-size: 1.25rem !important;
   margin-right: 1rem !important;
-  }
+}
 
-  .FormInputContainer{
+.FormInputContainer {
   background-color: transparent !important;
   border: none !important;
   border-bottom: solid .0563rem #000 !important;
@@ -73,42 +74,42 @@
   font-size: 1rem !important;
   padding: 0.5rem !important;
   width: 70% !important;
-  }
+}
 
-  #sendButton {
+#sendButton {
   margin-top: 1.5625rem !important;
   background-color: transparent !important;
   color: #000 !important;
-  border: solid .0313rem !important; 
+  border: solid .0313rem !important;
   border-radius: .625rem !important;
   outline: none !important;
   font-family: 'MedievalSharp' !important;
   font-size: .9375rem !important;
   padding: 1rem 2rem !important;
   margin-left: 20% !important;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
   cursor: pointer !important;
   transition: background-color 0.3s ease !important;
-  }
+}
 
-  #sendButton:hover{
+#sendButton:hover {
   background-color: #000 !important;
   color: white !important;
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .FormContainer {
-  width: 90%;
+    width: 90%;
   }
 
-  label, .FormInputContainer {
-  font-size: 1rem;
+  label,
+  .FormInputContainer {
+    font-size: 1rem;
   }
-  
+
   #sendButton {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
   }
 
 }
-

@@ -17,21 +17,21 @@ const Router = () => {
 
     return (
         <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App />} />
-            <Route path='/newproduct' element={<NewProductView/>} />
-            <Route path='/contact' element= {<ContactUsView/>}/>
-            <Route path='/events' element= {<EventView/>}/>
-            <Route path='/profile' element= {<ProfileView/>}/>
-            <Route path='/detailView/:id' element= {<DetailView/>} loader={fetchProduct}/>
-            <Route path='/editProduct/:id' element= {<EditView/>} loader={fetchProduct}/>
-        </Routes>
-    </BrowserRouter>
+            <Routes>
+                <Route path='/' element={<App />} />
+                <Route path='/newproduct' element={<NewProductView />} />
+                <Route path='/contact' element={<ContactUsView />} />
+                <Route path='/events' element={<EventView />} />
+                <Route path='/profile' element={<ProfileView />} />
+                <Route path='/detailView/:id' element={<DetailView />} loader={fetchProduct} />
+                <Route path='/editProduct/:id' element={<EditView />} loader={fetchProduct} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
 async function fetchProduct({ params }) {
-    const product = await productHandler.loadProduct(params. id);
+    const product = await productHandler.loadProduct(params.id);
     return { product };
 }
 export default Router

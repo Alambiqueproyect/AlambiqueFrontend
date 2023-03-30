@@ -10,7 +10,7 @@ function DetailView() {
 
   return (
     <>
-    <Modalproduct />
+      <Modalproduct />
     </>
 
   )

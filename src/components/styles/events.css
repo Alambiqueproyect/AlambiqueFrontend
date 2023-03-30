@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'MedievalSharp';
     src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
     font-style: normal;
@@ -6,12 +6,12 @@
 }
 
 
-#cardHeatherID{
+#cardHeatherID {
     font-family: 'MedievalSharp';
     font-weight: bold;
 }
 
-.CardGroup{
+.CardGroup {
     margin: 0 auto;
     width: 80%;
     display: flex;
@@ -22,24 +22,24 @@
 
 }
 
-.cardStyle{
+.cardStyle {
     margin: .9375rem;
 }
 
-@media screen and (max-width: 768px){
-    
-    .CardGroup{
+@media screen and (max-width: 768px) {
+
+    .CardGroup {
         margin: 0 auto;
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 1.25rem;
-    
-    
+
+
     }
 
-    .cardStyle{
+    .cardStyle {
         margin: .9375rem;
         width: 100% !important;
     }

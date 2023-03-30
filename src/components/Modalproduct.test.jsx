@@ -6,11 +6,11 @@ import '@testing-library/jest-dom';
 
 
 test('There is a button', () => {
-    vi.mock('react-router-dom',() => ({
-        useLoaderData:vi.Modalproduct()
+    vi.mock('react-router-dom', () => ({
+        useLoaderData: vi.Modalproduct()
     }))
-    render (<Modalproduct show={true} />)
+    render(<Modalproduct show={true} />)
     screen.debug()
     const button = screen.getByText(/close/i);
     expect(button).toBeInTheDocument();
-  });
+});

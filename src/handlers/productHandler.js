@@ -1,4 +1,4 @@
-import { productService }  from '../services/productService';
+import { productService } from '../services/productService';
 export const productHandler = {
     addProduct(newProduct) {
         if (!newProduct) {
@@ -24,7 +24,7 @@ export const productHandler = {
     loadProduct(id) {
         return productService.getProduct(id);
     },
-    
+
     deleteProduct(id) {
         return productService.deleteProduct(id);
     },
@@ -48,7 +48,7 @@ export const productHandler = {
     },
 
     async fetchProduct({ params }) {
-        const product = await productHandler.loadProduct(params. id);
+        const product = await productHandler.loadProduct(params.id);
         return { product };
     },
 

@@ -38,7 +38,7 @@ export function CarouselElement() {
         <Carousel.Caption>
           <h3 className='carouselH3'>¿No ves nada que te guste?</h3>
           <p className='carouselp'>
-            En ese caso contacta conmigo, escribeme y haré una poción especial, solo para ti. ¡Llámame! La felicidad está a un sorbo. 
+            En ese caso contacta conmigo, escribeme y haré una poción especial, solo para ti. ¡Llámame! La felicidad está a un sorbo.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

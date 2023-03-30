@@ -4,17 +4,17 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 
-function ContactUsView () {
+function ContactUsView() {
 
-    return(
+    return (
         <div>
 
-            <Navbar/>
-            <ContactUs/>
-            <Footer/>
+            <Navbar />
+            <ContactUs />
+            <Footer />
 
         </div>
-       
+
     )
 }
 
