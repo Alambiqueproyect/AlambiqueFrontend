@@ -16,6 +16,7 @@ const Router = () => {
         <BrowserRouter>
         <Routes>
             <Route path='/' element={<App />} />
+            <Route path='/home' element={<HomeView/>} />
             <Route path='/newproduct' element={<NewProductView/>} />
             <Route path='/contact' element= {<ContactUsView/>}/>
             <Route path='/events' element= {<EventView/>}/>
