@@ -7,13 +7,13 @@ import './styles/NewProductView.css'
 
 function NewProductView() {
 
-  
+
 
   return (
     <div className="NewProductViewContainer">
-    <Navbar/>
-    <NewProductForm/>
-    <Footer/>
+      <Navbar />
+      <NewProductForm />
+      <Footer />
     </div>
   )
 }

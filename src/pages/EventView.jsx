@@ -9,10 +9,10 @@ function EventView() {
 
   return (
     <>
-    <Navbar/>
-    <h1>¡Acompañanos! ¡Ven a uno de nuestros eventos!</h1>
-    <EventCard/>
-    <Footer/>
+      <Navbar />
+      <h1>¡Acompañanos! ¡Ven a uno de nuestros eventos!</h1>
+      <EventCard />
+      <Footer />
     </>
 
   )

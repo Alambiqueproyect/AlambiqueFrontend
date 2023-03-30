@@ -7,13 +7,13 @@ import { RegisterViewComponent } from './components/RegisterViewComponent';
 import { useState } from 'react'
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
-  const toggleForm = (formName) =>{
+  const toggleForm = (formName) => {
     setCurrentForm(formName);
   }
   return (
     < div>
       {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <RegisterViewComponent onFormSwitch={toggleForm}/>
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <RegisterViewComponent onFormSwitch={toggleForm} />
       }
       {/* <RegisterViewComponent /> */}
     </div>
