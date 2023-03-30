@@ -19,7 +19,7 @@ export const productService = {
         return allProducts;
     },
     async getProduct(id) {
-        let response = await apiClient.get("/" + id);
+        let response = await apiClient.get("/Product/GetProductById?id=" + id);
         if (!response==200)
         throw {
             status: response.status,
@@ -32,9 +32,9 @@ export const productService = {
         await apiClient.post("/Product/Post?userName=Bruja%20Aver%C3%ADa&userPassword=123456", newProduct)
     },
     async deleteProduct(id){
-        await apiClient.delete("Product/Delete?userName=Bruja%20Aver%C3%ADa&userPassword=123456&Id=" + id)
+        await apiClient.delete("/Product/Delete?userName=Bruja%20Aver%C3%ADa&userPassword=123456&Id=" + id)
     },
     async updateProduct(id, updatedProduct){
-        await apiClient.patch("/" + id, updatedProduct)
+        await apiClient.patch("/Product/Patch?userName=Bruja%20Aver%C3%ADa&userPassword=123456&Id=" + id, updatedProduct)
     }
 }
