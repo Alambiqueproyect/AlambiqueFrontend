@@ -104,7 +104,7 @@ export default function ProductList() {
                   className="input"
                   type="checkbox"
                   onChange={handleCheckBox}
-                  value="Saumerios"
+                  value="Saumeríos"
                 />
               </div>
               <div className="filtro">
@@ -118,7 +118,7 @@ export default function ProductList() {
               </div>
             </div>
         
-        <div cclassName="CardContainer">
+        <div className="CardContainer">
           
             <Modalproduct show={show} handleClose={handleClose} />
             {filteredProducts.map((item) => (
