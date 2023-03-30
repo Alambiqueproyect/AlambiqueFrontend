@@ -5,6 +5,7 @@ import { productHandler } from '../handlers/productHandler';
 import './styles/Productcardstyle.css'
 import { Form } from "react-bootstrap";
 import "./styles/Product.css";
+import { Link } from 'react-router-dom';
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -120,7 +121,7 @@ export default function ProductList() {
         
         <div className="CardContainer">
           
-            <Modalproduct show={show} handleClose={handleClose} />
+            {/* <Modalproduct show={show} handleClose={handleClose} /> */}
             {filteredProducts.map((item) => (
                <Card style={{ width: '18rem' }} key={item.id} id="card">
                <Card.Header id="itemTittle">{item.productName}</Card.Header>
@@ -129,7 +130,7 @@ export default function ProductList() {
                    <Card.Text>
                   {item.description}
                    </Card.Text>
-                   <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+                   <Link to={`detailView/${item.id}`}><Button variant="secondary" onClick={handleShow}>Más detalles</Button></Link>
                </Card.Body>
                </Card>
             ))}
@@ -189,7 +190,7 @@ export default function ProductList() {
           </div>
         </div>
         <div className="CardContainer">
-        <Modalproduct show={show} handleClose={handleClose} />
+        {/* <Modalproduct show={show} handleClose={handleClose} /> */}
           {products.map((item) => (
              <Card style={{ width: '18rem' }} key={item.id} id="card">
              <Card.Header id="itemTittle">{item.productName}</Card.Header>
@@ -198,7 +199,7 @@ export default function ProductList() {
                  <Card.Text>
                 {item.description}
                  </Card.Text>
-                 <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
+                 <Link to={`detailView/${item.id}`}><Button variant="secondary" onClick={handleShow}>Más detalles</Button></Link>
              </Card.Body>
              </Card>
           ))}
