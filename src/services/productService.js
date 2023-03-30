@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const apiClient = axios.create({
     baseURL: 'https://localhost:7227',
     withCredentials: false,
@@ -8,7 +7,6 @@ const apiClient = axios.create({
       'Content-Type': 'application/json'
     }
 })
-
 export const productService = {
     async getProducts() {
         let response = await apiClient.get("/Product/GetAll");

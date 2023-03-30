@@ -47,30 +47,7 @@ export default function ProductList() {
     const data = await productHandler.loadProducts();
     setProducts(data);
   };
-  // return (
-  //   <>
-  //       <div className="CardContainer">
-          
-  //       <Modalproduct show={show} handleClose={handleClose} />
-  //       {
-  //         productlist.map(p =>(
-  //           <Card style={{ width: '18rem' }} key={p.id} id="card">
-  //           <Card.Header>{p.productName}</Card.Header>
-  //           <Card.Img variant="top" src={p.image} className="imagecard"/>
-  //           <Card.Body>
-  //               <Card.Text>
-  //              {p.description}
-  //               </Card.Text>
-  //               <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
-  //           </Card.Body>
-  //           </Card>
-            
-  //         ))
-          
-  //       }
-
-  
-
+ 
   const handleCheckBox = (event) => {
     let searchInput = event.target.value;
 
@@ -92,23 +69,34 @@ export default function ProductList() {
   if (searchValues.length !== 0 || searchValue.length !== 0) {
     return (
       <>
-        <Form className="d-flex">
+        <Form className="d-flex" >
           <Form.Control
             onChange={handleSearch}
             type="search"
             placeholder="Search"
             className="me-2"
             aria-label="Search"
+            id='searchInput'
           />
           <Button className="btn">
            Search
           </Button>          
         </Form>
+        
+            <div className="Container1">
+              <div className="filtro">
+                <p>MOSTRAR</p>
+              </div>
 
-        <div className="Container1">
-          <div className="filtro">
-            <p>MOSTRAR</p>
-          </div>
+              <div className="filtro">
+                <label className="label">Pociones</label>
+                <input
+                  className=" input"
+                  type="checkbox"
+                  onChange={handleCheckBox}
+                  value="Poción"
+                />
+              </div>
 
           <div className="filtro">
             <label className="label">Amor</label>
@@ -170,22 +158,31 @@ export default function ProductList() {
           </div>
 
           <div className="filtro">
-            <label label="label">Amor</label>
+            <label label="label">Pociones</label>
             <input
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="Amor"
+              value="Poción"
             />
           </div>
 
           <div className="filtro">
-            <label className="label">Tech Skills</label>
+            <label className="label">Saumerios</label>
             <input
               className="input"
               type="checkbox"
               onChange={handleCheckBox}
-              value="TechSkills"
+              value="Saumeríos"
+            />
+          </div>
+          <div className="filtro">
+            <label label="label">Otros</label>
+            <input
+              className="input"
+              type="checkbox"
+              onChange={handleCheckBox}
+              value="Otros"
             />
           </div>
         </div>
@@ -193,7 +190,7 @@ export default function ProductList() {
         {/* <Modalproduct show={show} handleClose={handleClose}/> */}
           {products.map((item) => (
              <Card style={{ width: '18rem' }} key={item.id} id="card">
-             <Card.Header>{item.productName}</Card.Header>
+             <Card.Header id="itemTittle">{item.productName}</Card.Header>
              <Card.Img variant="top" src={item.image} className="imagecard"/>
              <Card.Body>
                  <Card.Text>
@@ -204,27 +201,6 @@ export default function ProductList() {
              </Card>
           ))}
         </div>
-
-        {/* <div className="CardContainer">
-          
-          
-          {
-            products.map(p =>(
-              <Card style={{ width: '18rem' }} key={p.id} id="card">
-              <Card.Header>{p.productName}</Card.Header>
-              <Card.Img variant="top" src={p.image} className="imagecard"/>
-              <Card.Body>
-                  <Card.Text>
-                 {p.description}
-                  </Card.Text>
-                  <Button variant="secondary" onClick={handleShow}>Más detalles</Button>
-              </Card.Body>
-              </Card>
-              
-            ))
-            
-          }
-        </div> */}
       </>
     );
 }

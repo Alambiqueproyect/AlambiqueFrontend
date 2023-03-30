@@ -9,7 +9,7 @@ const CreateProduct = () => {
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const [img, setImg] = useState("");
+  const [image, setImage] = useState("");
   const [stock, setStock] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [effectsDuration, setEffectsDuration] = useState("");
@@ -45,24 +45,33 @@ const CreateProduct = () => {
     let adverseEffectsInput = event.target.value;
     setAdverseEffects(adverseEffectsInput);
   };
-  const handleImgChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      setImg(reader.result)
-    };
+  // const handleImageChange = (event) => {
+  //   const file = event.target.input;
+  //   const reader = new FileReader();
+  //   reader.readAsDataURL(file);
+  //   reader.onload = () => {
+  //     setImage("image", reader.result)
+  //   };
+  //   console.log(file)
+  // };
+
+  const handleImageChange = (event) => {
+    let picture = event.target.value;
+    setImage(picture);
   };
+
   const handleStockChange = (event) => {
     let stockInput = event.target.value;
     setStock(stockInput);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { productName, description, price, img, stock, effectsDuration, ingredients, productCategory, adverseEffects };
+    let newProduct = { productName, description, price, image, stock, effectsDuration, ingredients, productCategory, adverseEffects };
     productHandler.addProduct(newProduct);
     event.target.reset()
   };
+
+  
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
@@ -120,13 +129,13 @@ const CreateProduct = () => {
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
             <label htmlFor="stock" className="form-label">Stock</label>
-            <input name="stock" type="number" min="1" max="25" className='FormInputContainer' required placeholder="¿Cuanto stock tienes de este" onChange={handleStockChange} />
+            <input name="stock" type="number" min="1" max="999" className='FormInputContainer' required placeholder="¿Cuanto stock tienes de este" onChange={handleStockChange} />
           </div>
         </div>
         <div className="mb-3">
           <div className='AddNewProductcontainer'>
-            <label htmlFor="img" className="form-label">Imagen</label>
-            <input name="img" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgChange} required />
+            <label htmlFor="image" className="form-label">Imagen</label>
+            <input name="image"  className="form-control" placeholder="Upload a picture" onChange={handleImageChange} required />
           </div>
         </div>
         <button type="submit" className="btn btn-primary" id="btn-ad" >Enviar</button>

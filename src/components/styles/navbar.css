@@ -50,6 +50,11 @@
   z-index: 1;
 }
 
+.linkStyle:hover{
+text-decoration: none !important;
+color: #FFFCE5;
+}
+
 @media screen and (max-width: 768px) {
 
   .navbar {

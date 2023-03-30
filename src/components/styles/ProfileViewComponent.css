@@ -15,7 +15,7 @@
 #profileViewContainer2{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
 #profile-img{
@@ -50,14 +50,24 @@ font-size: 1.875rem;}
     margin-left: .625rem;
 }
 
-#soyUnProductito{
-    width: 100%;
+#ProductContainer{
+    width: 180%;
     margin: .625rem;
-    background-color: antiquewhite;
+    background-color: transparent;
     border-radius: .625rem;
     font-family: 'MedievalSharp';
     font-size: 2.5rem;
+}
+p{
+    font-size: .9375rem !important;
+}
 
+#newProductId{
+    text-decoration: none;
+    color: black;
+}
+#newProductId:hover{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px){
@@ -91,15 +101,18 @@ font-size: 1.875rem;}
             margin-left: 17%;
         }
 
-        #soyUnProductito{
+        #ProductContainer{
             width: 100%;
-            height: 31.25rem;
-            margin: .625rem;
-            background-color: antiquewhite;
+            margin: .0rem !important;
+            background-color: transparent;
             border-radius: .625rem;
             font-family: 'MedievalSharp';
             font-size: 2.5rem;
-        
+        }
+
+        a{
+            color: black !important;
+            text-decoration: none !important;
         }
 
 }

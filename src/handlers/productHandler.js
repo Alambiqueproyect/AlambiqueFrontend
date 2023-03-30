@@ -1,5 +1,4 @@
 import { productService }  from '../services/productService';
-
 export const productHandler = {
     addProduct(newProduct) {
         if (!newProduct) {
@@ -17,11 +16,8 @@ export const productHandler = {
             "productCategory": newProduct.productCategory,
             "ingredients": newProduct.ingredients,
         }
-
         return productService.submitProduct(newProductStructure);
     },
-
-
     loadProducts() {
         return productService.getProducts();
     },

@@ -7,12 +7,14 @@
 
 .me-2{
     margin: 5px;
+    margin-top: 4%;
+    margin-left: 25%;
     background: #fffce5;
     border-radius: 15px;
     font-family: 'MedievalSharp' !important;
-    font-size: 15px;
+    font-size: 30px;
     color: #000;
-
+    height:20% ;
 }
 
 .btn{
@@ -86,3 +88,22 @@ p{
     font-family:  'MedivalSharp' !important;
 }
 
+@media screen and (max-width: 768px){
+
+    .filtro{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        height: 100%;
+        margin: .125rem;
+        background-color:#670b09;
+        color: #000;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 1.25rem;
+        border-bottom: solid .0625rem;
+        font-family:'MedivalSharp' !important;
+    }
+  
+
+}
