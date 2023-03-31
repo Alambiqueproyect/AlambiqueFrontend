@@ -42,11 +42,11 @@ Our client is a spanish witch who wants to sell her potions, candles and solutio
 
 ## 👩‍💻Group members:
 
-+ Marta Muñoz https://github.com/MartaMunMol **Scrum Master**
-+ Celia García https://github.com/CeliaGC **Product Owner**
-+ Paola Arce https://github.com/PaolaArcePavez Developer
-+ Ana Garrido https://github.com/AnaGarridoCoder Developer
-+ Nohelí Rosales https://github.com/Nohee22 Developer
++ Marta Muñoz https://github.com/MartaMunMol    |    https://www.linkedin.com/in/marta-m-28b334257/  **Scrum Master**
++ Celia García https://github.com/CeliaGC       |    https://www.linkedin.com/in/celia-garc%C3%ADa-castilla/  **Product Owner**
++ Paola Arce https://github.com/PaolaArcePavez  |    https://www.linkedin.com/in/paola-arce-95646232/  Developer
++ Ana Garrido https://github.com/AnaGarridoCoder|    https://www.linkedin.com/in/ana-garrido-mart%C3%ADn-181387245/  Developer
++ Nohely Rosales https://github.com/Nohee22     |    https://www.linkedin.com/in/nohely-rosales-34661a194/  Developer
 
 ## 💻How to install this project
 
