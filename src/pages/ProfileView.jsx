@@ -10,13 +10,13 @@ import ProfileProductContainer from "../components/ProfileProductContiner";
 function ProfileView() {
   return (
     <>
-    <Navbar/>
-    <div id="componentsContainer">
-    <ProfileViewComponent/>
-    <ProfileProductContainer/>
-    </div>
-    <Footer/>
-      </>
+      <Navbar />
+      <div id="componentsContainer">
+        <ProfileViewComponent />
+        <ProfileProductContainer />
+      </div>
+      <Footer />
+    </>
   )
 
 

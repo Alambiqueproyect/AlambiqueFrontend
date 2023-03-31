@@ -1,10 +1,10 @@
 import { eventService } from "../services/eventService"
 
 export const eventHandler = {
-    loadEvents(){
+    loadEvents() {
         return eventService.getEvents();
     },
-    loadEvent(id){
+    loadEvent(id) {
         return eventService.getEvent(id);
     }
 }

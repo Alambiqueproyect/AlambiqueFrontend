@@ -12,11 +12,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav_logo">
-        <img 
-        id = "img-logo"
-        src="src\assets\logoNegro.png" 
-        alt="Alambique"
-        className="icons" />
+        <img
+          id="img-logo"
+          src="src\assets\logoNegro.png"
+          alt="Alambique"
+          className="icons" />
       </div>
       {<div className={`nav_items ${isExpanded ? "active" : ""}`}>
         <Link to="/" className="linkStyle">Home</Link>

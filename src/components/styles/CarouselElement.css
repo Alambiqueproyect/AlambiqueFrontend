@@ -1,13 +1,22 @@
-.CarouselContainer{
+.CarouselContainer {
     width: 90%;
     height: 20%;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px){
-    .CarouselContainer{
+@media screen and (max-width: 768px) {
+    .CarouselContainer {
         width: 100%;
         height: 40%;
         margin: 10% auto;
+    }
+
+    .carouselH3 {
+        font-size: 1rem;
+        margin-top: .625rem;
+    }
+
+    .carouselp {
+        font-size: .625rem !important;
     }
 }

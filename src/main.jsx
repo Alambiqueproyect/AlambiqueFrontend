@@ -9,5 +9,5 @@ import Router from './router/router'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router/>
+  <Router />
 )

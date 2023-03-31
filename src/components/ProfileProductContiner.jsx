@@ -8,11 +8,11 @@ function ProfileProductContainer() {
 
   return (
     <>
-    
-         <div id="ProductContainer">
-            <ProductList/>
-            </div> 
-    
+
+      <div id="ProductContainer">
+        <ProductList />
+      </div>
+
     </>
   );
 }

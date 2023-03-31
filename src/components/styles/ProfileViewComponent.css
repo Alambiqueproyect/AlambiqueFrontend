@@ -5,38 +5,39 @@
     font-weight: normal;
 }
 
-#profileViewContiner1{
-   display: flex;
-   flex-direction: row;
+#profileViewContiner1 {
+    display: flex;
+    flex-direction: row;
     height: 100% !important;
     width: 100%;
 }
 
-#profileViewContainer2{
+#profileViewContainer2 {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#profile-img{
+#profile-img {
     height: 15.625rem;
     width: 15.625rem;
     margin-left: 30%;
 }
 
-.SettingContainer{
+.SettingContainer {
     width: 95%;
     border-radius: .3125rem;
     margin: .9375rem;
     background-color: antiquewhite;
 }
 
-h3{
+h3 {
     font-family: 'MedievalSharp';
     font-weight: bold;
-font-size: 1.875rem;}
+    font-size: 1.875rem;
+}
 
-.settingObjet{
+.settingObjet {
     display: flex;
     flex-direction: row;
     margin: 1.25rem;
@@ -44,13 +45,13 @@ font-size: 1.875rem;}
     padding-top: .625rem;
 }
 
-.profileViewIcon{
-    height: 2.5rem!important;
+.profileViewIcon {
+    height: 2.5rem !important;
     width: 2.5rem !important;
     margin-left: .625rem;
 }
 
-#ProductContainer{
+#ProductContainer {
     width: 180%;
     margin: .625rem;
     background-color: transparent;
@@ -58,61 +59,65 @@ font-size: 1.875rem;}
     font-family: 'MedievalSharp';
     font-size: 2.5rem;
 }
-p{
+
+p {
     font-size: .9375rem !important;
 }
 
-#newProductId{
+#newProductId {
     text-decoration: none;
     color: black;
 }
-#newProductId:hover{
+
+#newProductId:hover {
     text-decoration: none;
+
 }
 
-@media screen and (max-width: 768px){
 
-    #profileViewContiner1{
+@media screen and (max-width: 768px) {
+
+    #profileViewContiner1 {
         display: flex;
         flex-direction: column;
-         height: 100% !important;
-         width: 95%;
-     }
-     
-     #profileViewContainer2{
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         margin-left: 2%;
-        }
+        height: 100% !important;
+        width: 95%;
+    }
 
-        .settingObjet{
-            display: flex;
-            flex-direction: row;
-            margin: 1.25rem;
-            justify-content: flex-end;
-            padding-top: .625rem;
-            width: 90% !important;
-        }
+    #profileViewContainer2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 2%;
+    }
 
-        #profile-img{
-            height: 15.625rem;
-            width: 15.625rem;
-            margin-left: 17%;
-        }
+    .settingObjet {
+        display: flex;
+        flex-direction: row;
+        margin: 1.25rem;
+        justify-content: flex-end;
+        padding-top: .625rem;
+        width: 90% !important;
+    }
 
-        #ProductContainer{
-            width: 100%;
-            margin: .0rem !important;
-            background-color: transparent;
-            border-radius: .625rem;
-            font-family: 'MedievalSharp';
-            font-size: 2.5rem;
-        }
+    #profile-img {
+        height: 15.625rem;
+        width: 15.625rem;
+        margin-left: 17%;
+    }
 
-        a{
-            color: black !important;
-            text-decoration: none !important;
-        }
+    #ProductContainer {
+        width: 100%;
+        margin: .0rem !important;
+        background-color: transparent;
+        border-radius: .625rem;
+        font-family: 'MedievalSharp';
+        font-size: 2.5rem;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
 
 }

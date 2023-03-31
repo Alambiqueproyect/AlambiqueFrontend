@@ -1,28 +1,27 @@
-@font-face{
-    font-family: 'MedievalSharp';
-    src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
-    font-style: normal;
-    font-weight: normal;
-  }
-
-h1{
-    color: antiquewhite;
-    font-family: 'MedievalSharp';
-    font-size: 3.125rem;
-    margin-top: 3%;
+@font-face {
+  font-family: 'MedievalSharp';
+  src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 
-#componentsContainer{
+h1 {
+  color: antiquewhite;
+  font-family: 'MedievalSharp';
+  font-size: 3.125rem;
+  margin-top: 3%;
+}
+
+#componentsContainer {
   display: flex;
   flex-direction: row;
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-  #componentsContainer{
+  #componentsContainer {
     display: flex;
     flex-direction: column;
   }
 }
-

@@ -1,11 +1,11 @@
-@font-face{
+@font-face {
     font-family: 'MedievalSharp';
     src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype') !important;
     font-style: normal;
     font-weight: normal;
-    }
+}
 
-.CardContainer{
+.CardContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,34 +13,35 @@
     justify-content: center;
     justify-content: space-around;
     margin: 0 auto !important;
-    
+    width: 90%;
+
 }
 
-.imagecard{
+.imagecard {
     width: 100%;
     height: auto;
     object-fit: cover;
 
 }
 
-.card{
+.card {
     background: url(./src/assets/fondopergamino.jpg);
     padding: .9375rem !important;
     margin-bottom: .625rem !important;
-    
+
 }
 
-#itemTittle{
+#itemTittle {
     font-family: 'MedievalSharp';
     font-weight: bold;
     font-size: 1.5625rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
 
-    
-    .card{
+
+    .card {
         margin: 2%;
     }
 }

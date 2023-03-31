@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import CarouselElement  from './components/CarouselElement'
+import CarouselElement from './components/CarouselElement'
 import Productcard from './components/ProductList'
 import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar'
@@ -15,23 +15,23 @@ function App() {
 
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (formName) =>{
+  const toggleForm = (formName) => {
     setCurrentForm(formName);
   }
 
   return (
 
     < div>
-      <Navbar/>
-      <CarouselElement/>
-      <ProductList/>
-      {
+      <Navbar />
+      <CarouselElement />
+      <ProductList />
+      {/* {
         currentForm === "login" ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
-      }
+      } */}
       {/* <Register /> */}
-      <Footer/>
+      <Footer />
     </div>
-    
+
   )
 }
 
