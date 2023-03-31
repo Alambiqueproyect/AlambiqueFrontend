@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(/src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.pv-container {
+    font-family: 'MedievalSharp';
+    /* background-image: url(/src/assets/fondo-madera.jpg); */
+    height: 80%;
+}
+
+
+
+#profile-img {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    /* margin-right: 63em; */
+    margin-top: 1em;
+
+}
+
+.wishlist-box {
+    margin-top: -3em;
+    width: 40em;
+    height: 4em;
+    background-color: rgba(255, 255, 255, 0.509);
+
+}
+
+.wishlist {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 4em;
+    /* margin-left: 3em; */
+    font-size: x-large;
+
+}
+
+.wishlist-ico {
+    /* margin-left: 25em; */
+    margin-top: -1.2em;
+}
+
+#wishlistico {
+    height: 3.5em;
+    width: 3.5em;
+}
+
+.myOrders-box {
+    width: 40em;
+    height: 4em;
+    margin-top: -3em;
+    background-color: rgba(255, 255, 255, 0.509);
+
+}
+
+.myOrders {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 3em;
+    /* margin-left: 3em; */
+    font-size: x-large;
+
+}
+
+.myOrders-ico {
+    /* margin-left: 25em; */
+    margin-top: -1.2em;
+}
+
+#orderico {
+    height: 3.5em;
+    width: 3.5em;
+}
+
+.settings-box {
+    width: 40em;
+    height: 4em;
+    margin-top: -3.5em;
+    background-color: rgba(255, 255, 255, 0.509);
+}
+
+.settings {
+    font-family: 'MedievalSharp';
+    font-size: 20px;
+    margin-top: 3em;
+    /* margin-left: 3em; */
+    font-size: x-large;
+}
+
+.settings-ico {
+    margin-left: 25em;
+    margin-top: -1.2em;
+}
+
+#settingsico {
+    height: 3.5em;
+    width: 3.5em;
+}
+
+.product-box {
+    background-color: rgba(255, 255, 255, 0.509);
+}
+
+@media screen and (max-width: 768px) {}

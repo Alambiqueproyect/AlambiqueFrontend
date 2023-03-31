@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(/src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#profileViewContiner1 {
+    display: flex;
+    flex-direction: row;
+    height: 100% !important;
+    width: 100%;
+}
+
+#profileViewContainer2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#profile-img {
+    height: 15.625rem;
+    width: 15.625rem;
+    margin-left: 30%;
+}
+
+.SettingContainer {
+    width: 95%;
+    border-radius: .3125rem;
+    margin: .9375rem;
+    background-color: antiquewhite;
+}
+
+h3 {
+    font-family: 'MedievalSharp';
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.settingObjet {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    justify-content: flex-end;
+    padding-top: .625rem;
+}
+
+.profileViewIcon {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    margin-left: .625rem;
+}
+
+#ProductContainer {
+    width: 180%;
+    margin: .625rem;
+    background-color: transparent;
+    border-radius: .625rem;
+    font-family: 'MedievalSharp';
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: .9375rem !important;
+}
+
+#newProductId {
+    text-decoration: none;
+    color: black;
+}
+
+#newProductId:hover {
+    text-decoration: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #profileViewContiner1 {
+        display: flex;
+        flex-direction: column;
+        height: 100% !important;
+        width: 95%;
+    }
+
+    #profileViewContainer2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .settingObjet {
+        display: flex;
+        flex-direction: row;
+        margin: 1.25rem;
+        justify-content: flex-end;
+        padding-top: .625rem;
+        width: 90% !important;
+    }
+
+    #profile-img {
+        height: 15.625rem;
+        width: 15.625rem;
+        margin-left: 17%;
+    }
+
+    #ProductContainer {
+        width: 100%;
+        margin: .0rem !important;
+        background-color: transparent;
+        border-radius: .625rem;
+        font-family: 'MedievalSharp';
+        font-size: 2.5rem;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+
+}
