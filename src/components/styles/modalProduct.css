@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(./src/assets/font/MedievalSharp-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.modalTittle {
+    font-family: 'MedievalSharp' !important;
+    margin: 0 auto !important;
+}
+
+#imgContainer {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.descriptionContainer {
+    margin: .9375rem;
+    font-size: 1.125rem !important;
+}

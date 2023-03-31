@@ -1,12 +1,21 @@
-import React from "react"
+import React from "react";
+import ContactUs from "../components/ContactUs"
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 function ContactUsView() {
 
-  return (
-    <h1>CONTACT US PLEASE</h1>
+    return (
+        <div>
 
-  )
+            <Navbar />
+            <ContactUs />
+            <Footer />
+
+        </div>
+
+    )
 }
 
-export default ContactUsView
+export default ContactUsView;
