@@ -12,6 +12,7 @@ import ProfileView from "../pages/ProfileView";
 import DetailView from "../pages/DetailView";
 import { productHandler } from "../handlers/productHandler";
 import EditView from "../pages/EditView";
+import HomeView from "../pages/HomeView";
 
 const Router = () => {
 
@@ -19,6 +20,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App />} />
+                <Route path='/home' element={<HomeView />} />
                 <Route path='/newproduct' element={<NewProductView />} />
                 <Route path='/contact' element={<ContactUsView />} />
                 <Route path='/events' element={<EventView />} />

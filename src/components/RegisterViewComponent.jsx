@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles/Register.css";
+import "./styles/RegisterViewComponent.css";
 export const RegisterViewComponent = (props) => {
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
